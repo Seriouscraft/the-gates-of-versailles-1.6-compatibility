@@ -1,0 +1,124 @@
+ideas = {
+
+	country = {
+		ENG_anglo_french_rivalry = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				add_opinion_modifier = {
+					opinion = -20
+				}
+
+				FRA = {
+					add_opinion_modifier = {
+						opinion = -20
+					}
+				}
+			}
+		}
+
+	country = {
+		ENG_fascist_influence = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				fascism_acceptance = 80
+			}
+		}
+
+	country = {
+		ENG_rule_brittania = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				war_support_factor = 0.10
+				experience_gain_navy_factor = 0.25
+			}
+
+		}
+
+	country = {
+		ENG_greater_britain = {
+
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.15
+				consription = 0.05
+			}
+
+		}
+
+	country = {
+		ENG_weak_puppet_master = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				subjects_autonomy_gain = 1
+				stability_factor = -0.05
+			}
+
+		}
+
+	country = {
+		ENG_greater_britain = {
+
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+
+		removal_cost = -1
+
+		modifier = {
+			fascism_drift = 0.10
+			conservative_drift = -0.10
+			liberal_drift = -0.10
+		}

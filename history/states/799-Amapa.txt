@@ -1,0 +1,20 @@
+state={
+	id=799
+	name="STATE_799"
+	history = {
+		owner = BRA
+		add_core_of = BRA
+		buildings = {
+			infrastructure = 3
+			4980 = {
+				naval_base = 2
+			}
+		}
+	}
+	provinces={
+		4980 13220 
+	}
+	manpower=871900
+	state_category=large_town
+	buildings_max_level_factor=1.000
+}

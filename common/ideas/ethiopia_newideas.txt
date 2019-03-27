@@ -1,0 +1,24 @@
+ideas = {
+
+	country = {
+		ETH_defender = {
+				
+				allowed = {
+					original_tag = ETH
+					always = no
+				}
+
+				allowed_civil_war = {
+					always = no
+				}
+
+				removal_cost = -1
+
+				picture = generic_morale_bonus
+				
+				modifier = {
+					stability_factor = 0.1
+					war_support_factor = 0.1
+				}
+		}
+}

@@ -1,0 +1,25 @@
+state={
+	id=798
+	name="STATE_798"
+	history={
+		add_core_of = VIN
+		add_core_of = IND
+		owner = FRA
+		victory_points = {
+			12133 3 
+		}
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+
+		}
+
+	}
+
+	provinces={
+		1396 1423 4223 12133 7303 4284 7331 4341
+	}
+	manpower=2305000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

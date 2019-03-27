@@ -1,0 +1,165 @@
+﻿capital = 468
+
+oob = "QUE_1936"
+
+set_research_slots = 3
+set_stability = 0.6
+set_war_support = 0.3
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_recon = 1
+	gw_artillery = 1
+	gwtank = 1
+	basic_light_tank = 1
+	early_fighter = 1
+	naval_bomber1 = 1
+	early_bomber = 1
+	early_destroyer = 1
+	early_light_cruiser = 1
+	transport = 1
+	trench_warfare = 1
+	fleet_in_being = 1
+}
+
+set_politics = {
+
+	parties = {
+		democratic = { 
+			popularity = 42
+		}
+		neutrality = {
+			popularity = 56
+		}
+		fascism = {
+			popularity = 1
+		}
+		
+		communism = {
+			popularity = 1
+			#banned = no #default is no
+		}
+	}
+	
+	ruling_party = neutrality
+	last_election = "1935.10.14"
+	election_frequency = 60
+	elections_allowed = yes
+}
+
+create_country_leader = {
+	name = "Adélard Godbout"
+	desc = "POLITICS_MACKENZIE_KING_DESC"
+	picture = "Portrait_Quebec_Adelard_Godbout.dds"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Maurice Duplessis"
+	desc = "POLITICS_MACKENZIE_KING_DESC"
+	picture = "Portrait_Quebec_Maurice_Duplessis.dds"
+	expire = "1965.1.1"
+	ideology = centrism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Adrien Arcand"
+	desc = "POLITICS_ADRIEN_ARCAND_DESC"
+	picture = "Portrait_Quebec_Adrien_Arcand.dds"
+	expire = "1965.1.1"
+	ideology = nazism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Fred Rose"
+	desc = "POLITICS_TIM_BUCK_DESC"
+	picture = "Portrait_Quebec_Fred_Rose.dds"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = {
+		#
+	}
+}
+
+create_corps_commander = {
+	name = "Thomas Victor Anderson"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	traits = {  }
+	skill = 4
+    attack_skill = 2
+    defense_skill = 3
+    planning_skill = 3
+    logistics_skill = 5
+}
+
+create_field_marshal = {
+	name = "Charles Foulkes"
+	gfx = "GFX_CAN_charles_foulkes"
+	traits = { }
+	skill = 4
+    attack_skill = 4
+    defense_skill = 2
+    planning_skill = 4
+    logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "John Montague"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+	traits = { }
+	skill = 3
+    attack_skill = 1
+    defense_skill = 1
+    planning_skill = 3
+    logistics_skill = 5
+}
+create_corps_commander = {
+	name = "Bert Hoffmeister"
+	gfx = "GFX_CAN_bert_hoffmeister"
+	traits = { hill_fighter }
+	skill = 4
+    attack_skill = 4
+    defense_skill = 3
+    planning_skill = 3
+    logistics_skill = 3
+}
+
+create_navy_leader = {
+	name = "Leonard W. Murray"
+	gfx = "GFX_CAN_leonard_warren_murray"
+	traits = { }
+	skill = 4
+}
+
+create_navy_leader = {
+	name = "H.T. Baillie-Grohman"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_2.dds"
+	traits = { spotter }
+	skill = 4
+}
+create_navy_leader = {
+	name = "James D. Prentice"
+	gfx = "GFX_CAN_james_prentice"
+	traits = { spotter }
+	skill = 3
+}
+create_navy_leader = {
+	name = "Harry DeWolf"
+	gfx = "GFX_CAN_harry_dewolf"
+	traits = { superior_tactician }
+	skill = 4
+}

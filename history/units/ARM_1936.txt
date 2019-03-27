@@ -1,0 +1,105 @@
+﻿##### Division Templates #####
+division_template = {
+	name = "Hardzakman Bazhanumy" # Infantry Division
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		artillery = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Hatuk Brigad" # Mountain Division
+	regiments = {
+		mountaineers = { x = 0 y = 0 }	
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }	
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Hetselazorayin Brigad" # Cavalry Division
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 2 y = 0 }
+		cavalry = { x = 2 y = 1 }
+	}
+}
+
+##### OOB #####
+units = {
+	division= {	# "Nakhjevan Mountain Division"
+		name = "1st Division of Armenian Corp"
+		location = 6997
+		division_template = "Hatuk Brigad"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ARM" } }
+		start_experience_factor = 0.75
+		start_equipment_factor = 0.95
+	}
+
+	division= {	# "Yerevan Infantry Division"
+		name = "2nd Infantry Regiment of Yerevan"
+		location = 12320
+		division_template = "Hardzakman Bazhanumy"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ARM" } }
+		start_experience_factor = 0.75
+		start_equipment_factor = 0.95
+	}
+	
+	division= {	# "Artsakh Mountain Division"
+		name = "2nd Division of Armenian Corp"
+		location = 1467
+		division_template = "Hatuk Brigad"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ARM" } }
+		start_experience_factor = 0.75
+		start_equipment_factor = 0.95
+	}
+}
+
+### Air Wings
+air_wings = {
+	230 = {
+		fighter_equipment_0 = {
+			owner = "ARM" 
+			amount = 20
+		}
+	}
+}
+
+
+		
+	#########################
+	## STARTING PRODUCTION ##
+	#########################
+instant_effect = {
+	
+
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "ARM"
+		}
+		requested_factories = 1
+		progress = 0.1
+		efficiency = 50
+	}
+}

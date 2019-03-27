@@ -1,0 +1,55 @@
+﻿capital = 60
+
+OOB = "SAX_1936"
+
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1
+	tech_recon = 1
+}
+
+set_politics = {
+
+	parties = {
+		democratic = { 
+			popularity = 5
+		}
+
+		fascism = {
+			popularity = 10
+		}
+		
+		communism = {
+			popularity = 9
+		}
+		
+		social_democratic = {
+			popularity = 1
+		}
+		
+		liberal = {
+			popularity = 0
+		}
+		
+		totalitarian = {
+			popularity = 75
+		}
+	}
+	
+	ruling_party = totalitarian
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_convoys = 0
+
+create_country_leader = {
+	name = "Frederick Augustus III"
+	desc = "POLITICS_FREDRICK_AUGUSTUS_III_DESC"
+	picture = "Portrait_Saxony_Frederick_Augustus_III.dds"
+	expire = "1965.1.1"
+	ideology = monarchism
+	traits = {
+	}
+}

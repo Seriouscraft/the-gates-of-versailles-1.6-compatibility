@@ -1,0 +1,27 @@
+state={
+	id=854
+	name="STATE_854"
+	history={
+		owner = BAD
+		victory_points = {
+			6568 10
+		}
+		victory_points = {
+			6542 2
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 2
+			industrial_complex = 1
+			air_base = 2
+
+		}
+		add_core_of = BAD
+	}
+	provinces={
+		3530 3692 6542 6568 6712 11640 
+	}
+	manpower=2211000
+	state_category=city
+	buildings_max_level_factor=1.000
+}

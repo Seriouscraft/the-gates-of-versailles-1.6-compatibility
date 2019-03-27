@@ -1,0 +1,17 @@
+state={
+	id=870
+	name="STATE_870"
+	history = {
+		owner = NAP
+		add_core_of = NAP
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	provinces={
+		923 13214
+	}
+	manpower=61000
+	state_Category = pastoral
+	buildings_max_level_factor=1.000
+}

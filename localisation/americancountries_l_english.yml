@@ -1,0 +1,13 @@
+﻿l_english:
+ WIN_fascism:0 "West Indies State"
+ WIN_fascism_DEF:0 "the West Indies State"
+ WIN_democratic:0 "Republic of the West Indies"
+ WIN_democratic_DEF:0 "the Republic of the West Indies"
+ WIN_neutrality:1 "West Indies"
+ WIN_neutrality_DEF:1 "the West Indies"
+ WIN_communism:0 "West Indies Commune"
+ WIN_communism_DEF:0 "the West Indies Commune"
+ WIN_fascism_ADJ:0 "West Indian"
+ WIN_democratic_ADJ:0 "West Indian"
+ WIN_neutrality_ADJ:0 "West Indian"
+ WIN_communism_ADJ:0 "West Indian"

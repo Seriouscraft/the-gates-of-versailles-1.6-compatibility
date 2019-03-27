@@ -1,0 +1,18 @@
+state={
+	id=837
+	name="STATE_837"
+	history={
+		owner = SAU
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = SAU
+
+	}
+	provinces={
+		1544 1631 4440 4562 4603 10383 12316 
+	}
+	manpower=97100
+	state_category=wasteland
+	buildings_max_level_factor=1.000
+}

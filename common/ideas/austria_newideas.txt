@@ -1,0 +1,347 @@
+ideas = {
+
+	country = {
+		AUS_legacy = {
+				
+				allowed = {
+					original_tag = AUS
+					always = no
+				}
+
+				allowed_civil_war = {
+					always = no
+				}
+
+				removal_cost = -1
+
+				picture = GFX_idea_FRA_scw_intervention_republicans_focus
+				
+				modifier = {
+					stability_factor = 0.1
+					war_support_factor = 0.1
+				}
+		}
+		AUS_fighter_production = {
+				
+				allowed = {
+					original_tag = AUS
+					always = no
+				}
+
+				allowed_civil_war = {
+					always = no
+				}
+
+				removal_cost = -1
+
+				picture = GFX_idea_generic_air_payment
+				
+				modifier = {
+					 air_air_superiority_attack_factor = 0.075 
+					 air_air_superiority_defense_factor = 0.075 
+				}
+		}
+		AUS_nationalism = {
+				
+				allowed = {
+					original_tag = AUS
+					always = no
+				}
+
+				allowed_civil_war = {
+					always = no
+				}
+
+				removal_cost = -1
+
+				picture = GFX_triumphant_will
+				
+				targeted_modifier = { 
+					tag = GER 
+					attack_bonus_against = 0.1 
+					defense_bonus_against = 0.1 
+				}
+				targeted_modifier = { 
+					tag = BAV 
+					attack_bonus_against = 0.1 
+					defense_bonus_against = 0.1 
+				}
+				targeted_modifier = { 
+					tag = WUR 
+					attack_bonus_against = 0.1 
+					defense_bonus_against = 0.1 
+				}
+				targeted_modifier = { 
+					tag = WES 
+					attack_bonus_against = 0.1 
+					defense_bonus_against = 0.1 
+				} 
+		}
+		AUS_secret_militarization = {
+				
+			allowed = {
+				original_tag = AUS
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = GFX_idea_hun_secret_rearmament
+				
+			modifier = {
+				 consumer_goods_factor = -0.05
+				 production_speed_arms_factory_factor = 0.15
+				 production_speed_industrial_complex_factor = 0.15
+			}
+		}
+		AUS_new_austrian_man = {
+				
+			allowed = {
+				original_tag = AUS
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = GFX_generic_manpower_bonus
+				
+			modifier = {
+				 conscription = 0.025
+				 partisan_effect = 0.33 
+			}
+		}
+		AUS_curtail_fascism = {
+				
+			allowed = {
+				original_tag = AUS
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = GFX_idea_generic_fascism_banned
+				
+			modifier = {
+				 fascism_drift = -0.05
+			}
+		}
+		AUS_national_destiny = {
+				
+			allowed = {
+				original_tag = AUS
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = GFX_generic_volunteer_expedition_bonus
+				
+			modifier = {
+				 consumer_goods_factor = -0.2 
+			}
+		}
+		AUS_military_professionalism = {
+				
+			allowed = {
+				original_tag = AUS
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = GFX_idea_ast_volunteer_defence_corps
+				
+			modifier = {
+				 army_org_Factor = 0.25 
+				 army_attack_factor = 0.1 
+				 army_defense_factor = 0.1
+			}
+		}
+		AUS_bulwark_against_extremism = {
+				
+			allowed = {
+				original_tag = AUS
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = GFX_idea_ger_bulwark_against_bolshevism
+				
+			modifier = {
+				 industrial_capacity_factory = 0.1 
+				 industrial_capacity_dockyard = 0.1 
+			}
+		}
+		AUS_rebuild_nation = {
+				
+			allowed = {
+				original_tag = AUS
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = GFX_idea_generic_build_infrastructure
+				
+			modifier = {
+				 industry_repair_factor = 0.5 
+			}
+		}
+		AUS_king_otto = {
+				
+			allowed = {
+				original_tag = AUS
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = GFX_idea_generic_build_infrastructure
+				
+			modifier = {
+				 stability_factor = 0.1
+			}
+		}
+		AUS_navy = {
+				
+			allowed = {
+				original_tag = AUS
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = GFX_generic_navy_bonus
+				
+			modifier = {
+				 experience_gain_navy = 0.05 
+				 naval_hit_chance = 0.1
+				 spotting_chance = 0.1
+			}
+		}
+		AUS_ENG_research = {
+				
+			allowed = {
+				original_tag = AUS
+				always = no
+				NOT = {
+					has_war_with = ENG
+				}
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = GFX_generic_research_bonus
+				
+			modifier = {
+				research_time_factor = -0.05 
+			}
+		}
+		AUS_conservative_constitution = {
+				
+			allowed = {
+				original_tag = AUS
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = GFX_idea_hun_treaty_of_trianon
+				
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.025
+				partisan_effect = 0.2
+				drift_defence_factor = -0.33  
+			}
+		}
+		AUS_liberal_constitution = {
+				
+			allowed = {
+				original_tag = AUS
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = GFX_idea_hun_treaty_of_trianon
+				
+			modifier = {
+				stability_factor = 0.1
+				drift_defence_factor = 0.25 
+				consumer_goods_factor = 0.05 
+			}
+		}
+		AUS_socdem_constitution = {
+				
+			allowed = {
+				original_tag = AUS
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = GFX_idea_hun_treaty_of_trianon
+				
+			modifier = {
+				stability_factor = 0.05
+				drift_defence_factor = 0.25
+				MONTHLY_POPULATION = 0.25 
+				consumer_goods_factor = 0.05 				
+			}
+		}
+	}
+}

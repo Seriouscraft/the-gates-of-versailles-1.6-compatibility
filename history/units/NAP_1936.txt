@@ -1,0 +1,124 @@
+﻿####### Division Templates #######
+division_template = { 
+	name = "Divisione di Fanteria" 
+	division_names_group = ITA_INF_01 
+
+	# Represents nearly all infantry divisions
+	# In later years, CC.NN. Brigade added to INF Division (1x2 MIL/INF regiments)
+	# Also represent semi-mountain divisions (1st, 2nd, 3rd, 4th, 6th Divisions)
+	regiments = { 
+		infantry = { x = 0 y = 0 } 
+		infantry = { x = 0 y = 1 } 
+		infantry = { x = 0 y = 2 } 
+		infantry = { x = 1 y = 0 } 
+		infantry = { x = 1 y = 1 } 
+		infantry = { x = 1 y = 2 }
+	}  
+} 
+
+division_template = { 
+	name = "Reggimento di Cavalleria" 
+	division_names_group = ITA_CAV_01 
+
+	regiments = { 
+		cavalry = { x = 0 y = 0 } 
+		cavalry = { x = 0 y = 1 } 
+		cavalry = { x = 1 y = 0 } 
+		cavalry = { x = 1 y = 1 } 
+	} 
+}
+division_template = { 
+	name = "Divisione Mella Montagna" 
+	division_names_group = ITA_MNT_01 
+
+	regiments = { 
+		mountaineers = { x = 0 y = 0 } 												# (elite) Alpini Regiment
+		mountaineers = { x = 0 y = 1 } 
+		mountaineers = { x = 0 y = 2 } 
+		mountaineers = { x = 1 y = 0 } 
+		mountaineers = { x = 1 y = 1 } 
+		mountaineers = { x = 1 y = 2 } 
+	} 
+	support = { 
+		artillery = { x = 0 y = 0 } 
+	} 
+
+	priority = 2 
+}
+ 
+
+####### OOB #######
+units = { 
+	division= {	
+		name = "1a Azienda di Fanteria Napoletana" 
+		location = 819
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.1
+	}
+
+	division= {	
+		name = "2a Azienda di Fanteria Napoletana" 
+		location = 819
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.1
+	}
+
+	division= {	
+		name = "3a Azienda di Fanteria Napoletana" 
+		location = 6831
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.1
+	}
+
+	division= {	
+		name = "4a Azienda di Fanteria Napoletana" 
+		location = 3958
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.1
+	}
+
+	division= {	
+		name = "5a Azienda di Fanteria Napoletana" 
+		location = 11837
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.1
+	}
+
+	division= {	
+		name = "6a Azienda di Fanteria Napoletana" 
+		location = 4159
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.1
+	}
+
+	division= {	
+		name = "1st Neapolitan Calvalry Militia" 
+		location = 10074
+		division_template = "Reggimento di Cavalleria"
+		start_experience_factor = 0.1
+	}
+
+	division= {	
+		name = "1st Neapolitan Calvalry Militia" 
+		location = 4014
+		division_template = "Reggimento di Cavalleria"
+		start_experience_factor = 0.1
+	}
+
+	division= {	
+		name = "1a Divisione Mella Montagna" 
+		location = 3901
+		division_template = "Divisione Mella Montagna"
+		start_experience_factor = 0.2
+	}
+
+	division= {	
+		name = "2a Divisione Mella Montagna" 
+		location = 11882
+		division_template = "Divisione Mella Montagna"
+		start_experience_factor = 0.2
+	}
+
+	##### Naval OOB #####
+
+}

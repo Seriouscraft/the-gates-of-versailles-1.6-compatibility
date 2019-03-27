@@ -1,0 +1,223 @@
+﻿capital = 375
+
+oob = "TEX_1936"
+
+set_research_slots = 4
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	gw_artillery = 1
+	gwtank = 1
+	early_fighter = 1
+	cv_early_fighter = 1
+	cv_naval_bomber1 = 1
+	cv_CAS1 = 1
+	naval_bomber1 = 1
+	CAS1 = 1
+	early_bomber = 1
+	early_submarine = 1
+	basic_submarine = 1
+	early_destroyer = 1
+	early_light_cruiser = 1
+	basic_light_cruiser = 1
+	early_heavy_cruiser = 1
+	early_battleship = 1
+	early_battlecruiser = 1
+	early_carrier = 1
+	basic_carrier = 1
+	transport = 1
+	superior_firepower = 1
+	base_strike = 1
+
+}
+set_country_flag = monroe_doctrine
+
+1939.1.1 = {
+
+	add_political_power = 1198
+	
+	#generic focuses
+	complete_national_focus = army_effort
+	complete_national_focus = equipment_effort
+	complete_national_focus = motorization_effort
+	complete_national_focus = aviation_effort
+	complete_national_focus = naval_effort
+	complete_national_focus = large_navy
+	complete_national_focus = industrial_effort
+	complete_national_focus = construction_effort
+	complete_national_focus = production_effort
+	
+	oob = "TEX_1939"
+	set_technology = {
+		interwar_artillery = 1
+		infantry_weapons1 = 1
+		infantry_weapons2 = 1
+		support_weapons = 1
+
+		#doctrines
+		air_superiority = 1
+		grand_battle_plan = 1
+		trench_warfare = 1
+		fleet_in_being = 1
+		battlefleet_concentration = 1
+
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		radio_detection = 1
+		mechanical_computing = 1
+		computing_machine = 1
+
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		advanced_machine_tools = 1
+		synth_oil_experiments = 1
+		construction1 = 1
+		construction2 = 1
+		construction3 = 1
+		dispersed_industry = 1
+		dispersed_industry2 = 1
+		dispersed_industry3 = 1
+	}
+}
+
+
+set_convoys = 45
+
+set_politics = {
+
+	parties = {
+		democratic = { 
+			popularity = 70
+		}
+
+		fascism = {
+			popularity = 12
+		}
+		
+		communism = {
+			popularity = 10
+		}
+		
+		neutrality = { 
+			popularity = 8
+		}
+	}
+	
+	ruling_party = democratic
+	last_election = "1934.7.1"
+	election_frequency = 72
+	elections_allowed = yes
+}
+
+set_stability = 0.8
+
+create_country_leader = {
+	name = "Wilbert Lee"
+	desc = "POLITICS_LAZARO_CARDENAS_DESC"
+	picture = "wilbert.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Torkild Rieber"
+	desc = "POLITICS_SALVADOR_ABASCAL_DESC"
+	picture = "rieber.dds"
+	expire = "1965.1.1"
+	ideology = nazism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "James Allred"
+	desc = "POLITICS_MANUEL_GOMEZ_MORIN_DESC"
+	picture = "allred.dds"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Norman Thomas"
+	desc = "POLITICS_DIONISIO_ENCINA_DESC"
+	picture = "norman.dds"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = {
+		#
+	}
+}
+
+1939.1.1 = {
+	set_politics = {
+
+	parties = {
+		democratic = { 
+			popularity = 70
+		}
+
+		fascism = {
+			popularity = 12
+		}
+		
+		communism = {
+			popularity = 10
+		}
+		
+		neutrality = { 
+			popularity = 8
+		}
+	}
+	
+	ruling_party = democratic
+		last_election = "1934.7.1"
+		election_frequency = 72
+		elections_allowed = yes
+	}
+
+	create_country_leader = { #from 1950, but he's prettier so he gets to win early
+		name = "Manuel Avila Camacho"
+		desc = "POLITICS_LAZARO_CARDENAS_DESC"
+		picture = "gfx/leaders/South America/Portrait_South_America_Generic_3.dds"
+		expire = "1965.1.1"
+		ideology = despotism
+		traits = {
+			#
+		}
+	}
+}
+
+create_corps_commander = {
+	name = "Oscar Griswold"
+		picture = "Oscar.dds"
+	traits = {   }
+	skill = 2
+}
+
+create_corps_commander = {
+	name = "Maurice Rose"
+		picture = "Rose.dds"
+	traits = { panzer_leader  }
+	skill = 3
+}
+
+create_navy_leader = {
+	name = "Ernest King"
+		picture = "King.dds"
+	traits = { blockade_runner superior_tactician }
+	skill = 5
+}

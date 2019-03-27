@@ -1,0 +1,14 @@
+﻿l_english:
+ NAP_fascism:0 "Nationalist Naples"
+ NAP_fascism_DEF:0 "Nationalist Naples"
+ NAP_democratic:0 "Naples Republic"
+ NAP_democratic_DEF:0 "the Naples Republic"
+ NAP_neutrality:1 "Naples"
+ NAP_neutrality_DEF:1 "Naples"
+ NAP_communism:0 "Naples Confederation of Communists"
+ NAP_communism_DEF:0 "the Naples Confederation of Communists"
+ NAP_fascism_ADJ:0 "Napolian"
+ NAP_democratic_ADJ:0 "Napolian"
+ NAP_neutrality_ADJ:0 "Napolian"
+ NAP_communism_ADJ:0 "Napolian"
+ 

@@ -1,0 +1,281 @@
+﻿###########################
+# Italian Events
+###########################
+
+add_namespace = italy
+
+# Mussolini Assassinated
+country_event = {
+	id = italy.17
+	title = italy.17.t
+	desc = italy.17.d
+	picture = GFX_report_event_royal_parade
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = italy.17.a
+		kill_country_leader = yes
+		AUS = { leave_faction = yes }
+		swap_ideas = {
+            remove_idea = confused_government
+            add_idea = unstable_government
+        }
+		set_politics = {
+			ruling_party = neutrality
+			elections_allowed = no
+		}
+		add_popularity = {
+            ideology = fascism
+            popularity = -0.7
+        }
+		add_popularity = {
+            ideology = radical_socialist
+            popularity = 0.1
+        }
+		add_popularity = {
+            ideology = communism
+            popularity = 0.2
+        }
+		add_popularity = {
+            ideology = neutrality
+            popularity = 0.4
+        }
+		set_party_name = { ideology = neutrality long_name = ITA_militaryjunta name = ITA_militaryjunta }
+		create_country_leader = {
+	        name = "Pietro Badoglio"
+	        desc = "POLITICS_PIETRO_BADOGLIO_DESC"
+	        picture = "Portrait_Italy_Pietro_Badoglio.dds"
+	        expire = "1965.1.1"
+	        ideology = despotism
+	        traits = {
+		        #
+	        }
+        }
+		hidden_effect = {
+			country_event = { days = 1 id = news.335 }
+			set_cosmetic_tag = ITA_military_junta
+		}
+	}
+}
+	
+# Decide Between Radicals or Moderates
+country_event = {
+	id = italy.18
+	title = italy.18.t
+	desc = italy.18.d
+	picture = GFX_report_event_albanian_partisans
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = italy.18.a
+		add_ideas = internationalism
+	}
+	
+	option = {
+		name = italy.18.b
+		add_ideas = radical_socialist_influence
+	}
+}
+
+# French Revolution!
+country_event = {
+	id = italy.20
+	title = italy.20.t
+	desc = italy.20.d
+	picture = GFX_report_event_communists_cheer
+	
+	is_triggered_only = yes
+	
+	option = { # Support Communists
+		name = italy.20.a
+		trigger = { is_ai = no }
+		hidden_effect = {
+			set_capital = 14
+			start_civil_war = {
+				ruling_party = communism
+				ideology = neutrality
+				size = 0.5
+				capital = 16
+				states = { 16 18 34 8 28 42 51 31 25 26 20 22 32 21 735 784 1 513 459 406 458 665 661 448 273 514 557 515 272 701 297 741 799 286 728 781 765 783 460 793 20 17 }
+			}
+			random_other_country = {
+				limit = {
+					original_tag = FRA
+					has_government = neutrality
+				}
+				load_oob = "FRN_ITA_Supported_Civil_War"
+				set_equipment_fraction = 0.5
+				set_stability = 0.7
+				set_war_support = 0.9
+				add_popularity = {
+					ideology = neutrality
+					popularity = 0.7
+				}
+				add_popularity = {
+					ideology = totalitarian
+					popularity = 0.1
+				}
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.2
+				}
+				SWI = { leave_faction = yes }
+				BAD = { leave_faction = yes }
+				WES = { leave_faction = yes }
+				NAP = { leave_faction = yes }
+			}
+			news_event = { hours = 6 id = news.340 }
+			
+			load_oob = "FRA_ITA_Supported_Civil_War"
+			set_equipment_fraction = 0.6
+			set_stability = 0.9
+			set_war_support = 0.9
+			
+			add_popularity = {
+				ideology = communism
+				popularity = 0.9
+			}
+			add_popularity = {
+				ideology = radical_socialist 
+				popularity = 0.1
+			}
+			random_other_country = {
+				limit = {
+					original_tag = FRA
+					has_government = neutrality
+				}
+			}
+
+		}
+		custom_effect_tooltip = france_communists_chosen
+	}
+	
+	option = { # VIVA LA EMPERUR!
+		name = italy.20.b
+		hidden_effect = {
+			set_capital = 16
+			start_civil_war = {
+				ruling_party = neutrality
+				ideology = communism
+				size = 0.5
+				capital = 14
+				states = { 14 19 23 33 30 15 24 29 27 114 449 662 450 663 451 452 447 446 453 552 769 456 457 551 556 700 274 558 660 539 671 670 }
+			}
+			random_other_country = {
+				limit = {
+					original_tag = FRA
+					has_government = communism
+				}
+				load_oob = "FRA_ITA_Supported_Civil_War"
+				set_equipment_fraction = 0.5
+				set_stability = 0.8
+				set_war_support = 0.9
+				add_popularity = {
+					ideology = communism
+					popularity = 1
+				}
+			}
+			news_event = { hours = 6 id = news.340 }
+			
+			load_oob = "FRN_ITA_Supported_Civil_War"
+			set_equipment_fraction = 0.7
+			set_stability = 0.8
+			set_war_support = 0.9
+			
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.9
+			}
+			add_popularity = {
+				ideology = totalitarian
+				popularity = 0.1
+			}
+			random_other_country = {
+				limit = {
+					original_tag = ITA
+					has_government = communism
+				}
+			}
+
+		}
+		custom_effect_tooltip = france_napoleon_vi_chosen
+	}
+}
+
+# France Revolutionary Activity 
+country_event = {
+	id = italy.21
+	title = italy.21.t
+	desc = italy.21.d
+	picture = GFX_report_event_communist_leader
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = italy.21.a
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 2
+				OR = {
+				ITA = { has_government = communism }
+				communism > 0.2
+			}
+		}
+		add_ideas = revolutionary_activity
+	}
+}
+
+}
+
+# French Commune being supported by Italy (Communism)
+country_event = {
+	id = italy.22
+	title = italy.22.t
+	desc = italy.22.d
+	picture = GFX_report_event_crowd_in_prague
+	
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	trigger = {
+		tag = FRA
+		ITA = { has_government = communism }
+		ITA = { has_completed_focus = ITA_therisingofthefrenchcommune }
+	}
+	
+	option = {
+		name = italy.22.a
+		add_ideas = french_commune_supported
+    }
+}
+
+country_event = {# The Political Situation
+	id = italy.23
+	title = italy.23.t
+	desc = italy.23.d
+	picture = GFX_report_event_spain_civil_war_soldiers
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = ITA
+		date > 1936.1.1
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = italy.23.a
+	}
+}
+
+
+

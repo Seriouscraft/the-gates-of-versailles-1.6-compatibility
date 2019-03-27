@@ -1,0 +1,156 @@
+﻿capital = 4
+
+oob = "AUS_1936"
+
+set_research_slots = 3
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
+	tech_engineers = 1
+	tech_support = 1		
+	tech_mountaineers = 1
+	early_fighter = 1
+	CAS1 = 1
+	motorised_infantry = 1
+	gwtank = 1
+	basic_light_tank = 1
+	improved_light_tank = 1
+	gw_artillery = 1
+}
+
+set_politics = {
+
+	parties = {
+		neutrality = { 
+			popularity = 0
+		}
+
+		fascism = {
+			popularity = 62
+		}
+
+		democratic = {
+			popularity = 13
+		}
+		
+		social_democratic = {
+			popularity = 11
+		}
+		
+		liberal = {
+			popularity = 7
+		}
+		
+		communism = {
+			popularity = 7
+		}
+	}
+	
+	ruling_party = fascism
+	last_election = "1930.11.9"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_stability = 0.50
+
+create_country_leader = {
+	name = "Adolf Hitler"
+	desc = "POLITICS_ADOLF_HITLER_DESC"
+	picture = "Portrait_Austria_Adolf_Hitler.dds"
+	expire = "1965.1.1"
+	ideology = nazism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Karl Renner"
+	desc = "POLITICS_KARL_RENNER_DESC"
+	picture = "gfx/leaders/Europe/Portrait_AUS_Karl_Renner.dds"
+	expire = "1965.1.1"
+	ideology = social_democracy
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Julius Raab"
+	desc = "POLITICS_KARL_RENNER_DESC"
+	picture = "gfx/leaders/Europe/Portrait_AUS_Julius_Raab.dds"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Franz Dinghofer"
+	desc = "POLITICS_KARL_RENNER_DESC"
+	picture = "gfx/leaders/Europe/Portrait_AUS_Franz_Dinghofer.dds"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Alfred Klahr"
+	desc = "POLITICS_ALFRED_KLAHR_DESC"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = {
+		#
+	}
+}
+
+create_corps_commander = {
+	name = "Karl Eglseer"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+	traits = { trait_mountaineer trickster }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Sigismund Schilhawsky"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
+	traits = { trickster }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Wilhelm Zehner"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_13.dds"
+	traits = { infantry_officer }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Theodor Brantner"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+	traits = { cavalry_officer }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+}

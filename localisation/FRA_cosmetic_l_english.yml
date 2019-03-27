@@ -1,0 +1,8 @@
+﻿l_english: 
+ BEL_FRA_neutrality_autonomy_puppet:1 "Duché des Flandres"
+ BEL_FRA_neutrality_autonomy_puppet_DEF:1 "The Duchy of Flanders"
+ HOL_FRA_neutrality_autonomy_puppet:1 "Royaume des Pays-Bas"
+ HOL_FRA_neutrality_autonomy_puppet_DEF:1 "The French puppeted kingdom of the Netherlands"
+ INS_independent_neutrality:0 "Independent State of Indonesia"
+ INS_FRA_neutrality_autonomy_puppet:1 "Colonie Française d'Indonésie"
+ INS_FRA_neutrality_autonomy_puppet_DEF:1 "The French Colony of Indonesia"

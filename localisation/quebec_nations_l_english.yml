@@ -1,0 +1,13 @@
+﻿l_english:
+ QUE_fascism:0 "Quebecer National State"
+ QUE_fascism_DEF:0 "the Quebecer National State"
+ QUE_democratic:0 "Republic of Quebec"
+ QUE_democratic_DEF:0 "the Republic of Quebec"
+ QUE_neutrality:1 "Quebec"
+ QUE_neutrality_DEF:1 "Quebec"
+ QUE_communism:0 "Socialist Republic of Quebec"
+ QUE_communism_DEF:0 "the Socialist Republic of Quebec"
+ QUE_fascism_ADJ:0 "Quebecer"
+ QUE_democratic_ADJ:0 "Quebecer"
+ QUE_neutrality_ADJ:0 "Quebecer"
+ QUE_communism_ADJ:0 "Quebecer"

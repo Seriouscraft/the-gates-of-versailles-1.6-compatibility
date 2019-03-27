@@ -1,0 +1,39 @@
+spriteTypes = { 
+##Icon For: 241050
+ SpriteType = { 
+ name = "GFX_protectorofafrica" 
+ texturefile = "gfx/interface/goals/GFX_protectorofafrica.tga" 
+ }##Icon For: 241048
+ SpriteType = { 
+ name = "GFX_thelionofjudah" 
+ texturefile = "gfx/interface/goals/GFX_thelionofjudah.tga" 
+ }##Icon For: 241051
+ SpriteType = { 
+ name = "GFX_agreaterethiopia" 
+ texturefile = "gfx/interface/goals/GFX_agreaterethiopia.tga" 
+ }##Icon For: 241054
+ SpriteType = { 
+ name = "GFX_attackbritishcolonies" 
+ texturefile = "gfx/interface/goals/GFX_attackbritishcolonies.tga" 
+ }##Icon For: 241052
+ SpriteType = { 
+ name = "GFX_liberianindependence" 
+ texturefile = "gfx/interface/goals/GFX_liberianindependence.tga" 
+ }##Icon For: 241053
+ SpriteType = { 
+ name = "GFX_anafricanalliance" 
+ texturefile = "gfx/interface/goals/GFX_anafricanalliance.tga" 
+ }##Icon For: 241055
+ SpriteType = { 
+ name = "GFX_attackfrenchcolonies" 
+ texturefile = "gfx/interface/goals/GFX_attackfrenchcolonies.tga" 
+ }##Icon For: 247157
+ SpriteType = { 
+ name = "GFX_defenderofthefaith" 
+ texturefile = "gfx/interface/goals/GFX_defenderofthefaith.tga" 
+ } 
+ SpriteType = { 
+ name = "GFX_scrambleforegypt" 
+ texturefile = "gfx/interface/goals/GFX_scrambleforegypt.tga" 
+ } 
+ }

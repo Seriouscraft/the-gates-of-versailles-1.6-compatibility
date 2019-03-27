@@ -1,0 +1,18 @@
+state={
+	id=790
+	name="STATE_790"
+	history = {
+		owner = SWI
+		add_core_of = SWI
+		buildings = {
+			industrial_complex = 1
+			arms_factory = 1
+		}
+	}
+	provinces={
+		3612 6666 6683 9622 11590 13124 
+	}
+	manpower=758000
+	state_category=large_town
+	buildings_max_level_factor=1.000
+}

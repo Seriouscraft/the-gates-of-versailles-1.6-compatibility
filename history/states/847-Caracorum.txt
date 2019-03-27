@@ -1,0 +1,19 @@
+
+state={
+	id=847
+	name="STATE_847"
+	
+	history = {
+		owner = TIB
+		add_core_of = TIB
+		add_core_of = RAJ
+		}
+		
+	provinces = {
+		5042 7273 
+	}
+
+	manpower=162522
+	buildings_max_level_factor=1.000
+	state_category=town
+}

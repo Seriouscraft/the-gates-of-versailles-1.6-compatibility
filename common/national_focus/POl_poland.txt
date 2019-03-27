@@ -1,0 +1,769 @@
+focus_tree = {
+id = poland
+country = { 
+factor = 0 		
+modifier = { 
+add = 10 
+tag = POL 
+}
+}
+##Focus for the polish economy##
+focus = {
+		id = POL_the_polish_economy
+		 icon = GFX_goal_generic_production
+		 x = 13
+		 y = 0
+		 cost = 10
+		 ai_will_do = {
+					factor = 1
+					}
+		completion_reward = {
+		add_tech_bonus = {
+				name = POL_the_old_economy
+				bonus = 0.5
+				uses = 1
+				category = industry
+		}
+	}
+}
+
+##focus for central industrial region##
+
+focus = {
+		id = POL_central_industrial_region
+		prerequisite = { focus = POL_the_polish_economy }
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 14
+		y = 1
+		cost = 6
+		ai_will_do = {
+				factor = 1
+					}
+		available = {
+			has_full_control_of_state = 10
+		}
+			completion_reward = {
+				10 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+						type = industrial_complex
+						level = 1
+							instant_build = yes
+			}
+		}
+	}
+}
+
+##focus for integrated infrastructure##
+
+focus = {
+		id = POL_integrated_infrastructure
+		prerequisite = { focus = POL_the_polish_economy }
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 12
+		y = 1
+		cost = 6
+		ai_will_do = {
+					factor = 1
+					}
+		available = {
+				has_full_control_of_state = 88
+				has_full_control_of_state = 91
+					}
+			completion_reward = {
+				88 = {
+				add_building_construction = {
+						type = infrastructure
+						level = 1
+							instant_build = yes
+				}
+			}
+				91 = {
+				add_building_construction = {
+						type = infrastructure
+						level = 1
+							instant_build = yes
+			}
+		}
+	}
+}
+
+##Focus for malopolska##
+focus = {
+		id = POL_malopolska
+		prerequisite = { focus = POL_central_industrial_region }
+		icon = GFX_goal_generic_construction
+		x = 14
+		y = 2
+		cost = 6
+		ai_will_do = {
+					factor = 1
+					}
+		available = {
+			has_full_control_of_state = 88
+				}
+				completion_reward = {
+					88 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+							type = industrial_complex
+							level = 1
+								instant_build = yes
+			}
+		}
+	}
+}
+
+##focus for modern roads##
+focus = {
+		id = POL_modern_roads
+		prerequisite = { focus = POL_integrated_infrastructure }
+		icon = GFX_goal_generic_construction2
+		x = 12
+		y = 2
+		cost = 6
+		ai_will_do = {
+					factor = 1
+					}
+		available = {
+				has_full_control_of_state = 92
+		}
+			completion_reward = {
+				92 = {
+					add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+				}
+			}
+		}
+	}
+
+##Focus for wielkopolska##
+
+focus = {
+	id = POL_wielkopolska
+	prerequisite = { focus = POL_malopolska }
+	icon = GFX_goal_generic_construct_civilian
+		x = 14
+		y = 3
+		cost = 6
+		ai_will_do = {
+					factor = 1
+					}
+		available = {
+			has_full_control_of_state = 87
+				}
+				completion_reward = {
+					87 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+							type = industrial_complex
+							level = 1
+								instant_build = yes
+			}
+		}
+	}
+}
+
+##focus for new trains##
+
+focus = {
+		id = POL_new_trains
+		prerequisite = { focus = POL_modern_roads }
+		#icon = tog ting
+		x = 12
+		y = 3
+		cost = 6
+		ai_will_do = {
+					factor = 1
+					}
+		available = {
+				has_full_control_of_state = 98
+		}
+			completion_reward = {
+				98 = {
+					add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+			}
+		}
+	}
+}
+
+##Focus for reboot the economy##
+
+focus = {
+		id = POL_reboot_economy
+		prerequisite = { focus = POL_wielkopolska }
+		prerequisite = { focus = POL_new_trains }
+		icon = GFX_focus_generic_industry_2
+		x = 13
+		y = 4
+		cost = 7
+		ai_will_do = {
+					factor = 1
+					}
+			completion_reward = {
+			if = {
+				limit = {
+					has_idea = POL_industry
+				}
+				swap_ideas = {
+					remove_idea = POL_industry
+					add_idea = POL_industry2
+						}
+					}
+				}
+			}
+
+
+##a job for every pole##
+
+focus = {
+		id = POL_job_for_every_pole
+		prerequisite = { focus = POL_reboot_economy }
+		icon = GFX_goal_generic_propaganda
+		x = 13
+		y = 5
+		cost = 6
+		ai_will_do = {
+					factor = 1
+					}
+			completion_reward = {
+				POL = { country_event = {
+				days = 1 
+				id = poland.13
+			}
+		}
+	}
+}
+
+##focus for monitored labor##
+
+focus = {
+		id = POL_monitored_labor
+		prerequisite = { focus = POL_job_for_every_pole }
+		icon = GFX_goal_generic_national_unity
+		x = 12
+		y = 6
+		cost = 6
+		ai_will_do = {
+					factor = 1
+					}
+			completion_reward = {
+				POL = { country_event = {
+				days = 1
+				id = poland.14
+			}
+		}
+	}
+}
+
+##focus for work harder not smarter##
+
+focus = {
+		id = POL_harder_not_smarter
+		prerequisite = { focus = POL_job_for_every_pole }
+		icon = GFX_goal_generic_production2
+		x = 14
+		y = 6
+		cost = 6
+		ai_will_do = {
+					factor = 1
+					}
+		completion_reward = {
+				POL = { country_event = {
+				days = 1
+				id = poland.15
+				}
+			}
+		}
+	}
+
+##focus for forbid unemployment##
+
+focus = {
+		id = POL_forbid_unemployment
+		prerequisite = { focus = POL_harder_not_smarter }
+		prerequisite = { focus = POL_monitored_labor }
+		icon = GFX_goal_generic_demand_territory
+		x = 13
+		y = 7
+		cost = 6
+		ai_will_do = {
+					factor = 1
+					}
+		completion_reward = {
+				POL = { country_event = {
+				days = 1
+				id = poland.16
+				}
+			}
+		}
+	}
+
+##focus for increase the hours##
+
+focus = {
+		id = POL_increase_hours
+		prerequisite = { focus = POL_reboot_economy }
+		icon = GFX_focus_generic_treaty
+		x = 10
+		y = 5
+		cost = 6
+		ai_will_do = {
+					factor = 1
+					}
+		completion_reward = {
+				add_stability = -0.02
+				if = {
+				limit = {
+					has_idea = POL_industry2
+				}
+				swap_ideas = {
+					remove_idea = POL_industry2
+					add_idea = POL_industry3
+						}
+					}
+		}
+}
+
+##decrease the payment##
+
+focus = {
+		id = POL_decrease_the_payment
+		prerequisite = { focus = POL_increase_hours }
+		icon = GFX_focus_generic_concessions
+		x = 10
+		y = 6
+		cost = 6
+		ai_will_do = {
+					factor = 1
+					}
+		completion_reward = {
+				POL = { country_event = {
+				days = 1
+				id = poland.17
+			}
+		}
+	}
+}
+
+##Focus for no sick days##
+
+focus = {
+		id = POL_no_sick_days
+		prerequisite = { focus = POL_decrease_the_payment }
+		icon = GFX_focus_generic_military_academy
+		x = 10
+		y = 7
+		cost = 6
+		ai_will_do = {
+					factor = 1
+					}
+		completion_reward = {
+			POL = { country_event = {
+				days = 1
+				id = poland.18
+			}
+		}
+	}
+}
+
+##Focus for only poles in the factories##
+
+focus = {
+		id = POL_poles_in_factories
+		prerequisite = { focus = POL_reboot_economy }
+		icon = GFX_focus_generic_polish_deal
+		x = 16
+		y = 5
+		cost = 6
+		ai_will_do = {
+					factor = 1
+					}
+		completion_reward = {
+			POL = { country_event = {
+				days = 1
+				id = poland.19
+			}
+		}
+	}
+}
+
+##focus for labor lottery
+
+focus = {
+		id = POL_labor_lottery
+		prerequisite = { focus = POL_poles_in_factories }
+		#icon = labor lottery ting
+		x = 16
+		y = 6
+		cost = 6
+		ai_will_do = {
+					factor = 1
+					}
+		completion_reward = {
+			POL = { country_event = {
+				days = 1
+				id = poland.20
+			}
+		}
+	}
+}
+
+##focus for never close the factories##
+
+focus = {
+		id = POL_never_close_factories
+		prerequisite = { focus = POL_labor_lottery }
+		icon = GFX_focus_generic_support_the_left_right
+		x = 16
+		y = 7
+		cost = 6
+		ai_will_do = {
+					factor = 1
+					}
+		completion_reward = {
+			POL = { country_event = {
+				days = 1
+				id = poland.21
+			}
+		}
+	}
+}
+
+##Focus for further development##
+
+focus = {
+		id = POL_further_development
+		prerequisite = { focus = POL_never_close_factories }
+		prerequisite = { focus = POL_forbid_unemployment }
+		prerequisite = { focus = POL_no_sick_days }
+		icon = GFX_focus_generic_industry_3
+		x = 13
+		y = 8
+		cost = 7
+		ai_will_do = {
+					factor = 1
+					}
+		completion_reward = {
+		add_stability = 0.15
+			if = {
+				limit = {
+					has_idea = POL_industry3
+				}
+				swap_ideas = {
+					remove_idea = POL_industry3
+					add_idea = POL_industry4
+						}
+					}
+	}
+}
+
+##focus for industry for the military
+
+focus = {
+		id = POL_industry_for_the_military
+		prerequisite = { focus = POL_further_development }
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 13
+		y = 9
+		cost = 6
+		ai_will_do = {
+					factor = 1
+					}
+		complete_tooltip = {
+			every_state = {
+				limit = { has_state_flag = POL_industry_for_the_military }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = POL_industry_for_the_military
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = POL_industry_for_the_military
+		}
+	}
+}
+##focus for cheaper not better##
+
+focus = {
+		id = POL_cheaper_not_better
+		prerequisite = { focus = POL_industry_for_the_military }
+		mutually_exclusive = { focus = POL_better_not_cheater }
+		icon = GFX_goal_generic_occupy_start_war
+		x = 12
+		y = 10
+		cost = 6
+		ai_will_do = {
+					factor = 1
+					}
+		completion_reward = {
+		add_ideas = cheap_guns
+			}
+		}
+
+##focus for better not cheaper##
+
+focus = {
+	id = POL_better_not_cheater
+	prerequisite = { focus = POL_industry_for_the_military }
+	mutually_exclusive = { focus = POL_cheaper_not_better }
+	icon = GFX_goal_poland_goal
+	x = 14
+	y = 10
+	cost = 6
+	ai_will_do = {
+				factor = 1
+				}
+	completion_reward = {
+		add_tech_bonus = {
+				name = POL_better_not_cheater
+				bonus = 0.5
+				uses = 1
+				category = infantry_weapons
+		}
+	}
+}
+
+##focus for use the car factories##
+
+focus = {
+	id = POL_use_the_car_factories
+	prerequisite = { focus = POL_better_not_cheater focus = POL_cheaper_not_better }
+	icon = GFX_goal_generic_army_motorized
+	x = 13
+	y = 11
+	cost = 6
+	ai_will_do = {
+				factor = 1
+				}
+	completion_reward = {
+		add_tech_bonus = {
+				name = motorized_bonus
+				bonus = 0.5
+				category = cat_mechanized_equipment
+				uses = 1
+		}
+	}
+}
+
+##focus for mechanize agrculture##
+
+focus = {
+	id = POL_mechanize_agriculture
+	prerequisite = { focus = POL_further_development }
+	icon = GFX_goal_generic_neutrality_focus
+	x = 10
+	y = 9
+	cost = 6
+	ai_will_do = {
+				factor = 1
+				}
+	completion_reward = {
+				add_stability = 0.02
+	}
+}
+
+##focus for URSUS##
+
+focus = {
+	id = POL_ursus
+	prerequisite = { focus = POL_mechanize_agriculture }
+	x = 10
+	y = 10
+	cost = 6
+	ai_will_do = {
+				factor = 1
+				}
+	completion_reward = {
+				add_ideas = ursus
+		}
+	}
+
+##Focus for cheap pesticides##
+
+focus = {
+	id = POL_cheap_pesticides
+	prerequisite = { focus = POL_ursus }
+	icon = GFX_goal_generic_trade
+	x = 10
+	y = 11
+	cost = 6
+	ai_will_do = {
+				factor = 1
+				}
+	completion_reward = {
+				add_tech_bonus = {
+				name = POL_cheap_pesticides
+				bonus = 0.5
+				uses = 1
+				technology = excavation1
+				technology = excavation2
+				technology = excavation3
+				technology = excavation4
+				technology = excavation5
+		}
+	}
+}
+
+##Focus for poland a and b##
+
+focus = {
+	id = POL_poland_a_and_b
+	prerequisite = { focus = POL_further_development }
+	icon = GFX_goal_generic_forceful_treaty
+	x = 16
+	y = 9
+	cost = 6
+	ai_will_do = {
+				factor = 1
+				}
+	available = {
+			has_full_control_of_state = 89
+			has_full_control_of_state = 772
+				}
+				completion_reward = {
+					89 = {
+					add_extra_state_shared_building_slots = 2
+		}
+					772 = {
+					add_extra_state_shared_building_slots = 2
+			}
+		}
+	}
+
+##Focus for fix the railway gauge
+
+focus = {
+	id = POL_fix_the_railway_gauge
+	prerequisite = { focus = POL_poland_a_and_b }
+	icon = GFX_goal_generic_construct_infrastructure
+	x = 16
+	y = 10
+	cost = 6
+	ai_will_do = {
+				factor = 1
+				}
+	available = {
+			has_full_control_of_state = 89
+			has_full_control_of_state = 772
+				}
+			completion_reward = {
+				89 = {
+				add_building_construction = {
+						type = infrastructure
+						level = 1
+							instant_build = yes
+				}
+			}
+				772 = {
+				add_building_construction = {
+						type = infrastructure
+						level = 1
+							instant_build = yes
+			}
+		}
+	}
+}
+
+##focus for eastern factories##
+
+focus = {
+	id = POL_eastern_factories
+	prerequisite = { focus = POL_fix_the_railway_gauge }
+	icon = GFX_goal_generic_construct_civ_factory
+	x = 16
+	y = 11
+	cost = 6
+	ai_will_do = {
+				factor = 1
+				}
+	available = {
+			has_full_control_of_state = 89
+			has_full_control_of_state = 772
+				}
+				completion_reward = {
+					89 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+							type = industrial_complex
+							level = 1
+								instant_build = yes
+							}
+					772 = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+							type = industrial_complex
+							level = 1
+								instant_build = yes
+				}
+			}
+		}
+	}
+}
+
+##focus for a thriving economy##
+
+focus = {
+	id = POL_thriving_economy
+	prerequisite = { focus = POL_eastern_factories }
+	prerequisite = { focus = POL_use_the_car_factories }
+	prerequisite = { focus = POL_cheap_pesticides }
+	icon = GFX_goal_generic_consumer_goods
+	x = 13
+	y = 12
+	cost = 10
+	ai_will_do = {
+				factor = 2
+				}
+	completion_reward = {
+			add_stability = 0.15
+				if = {
+				limit = {
+					has_idea = POL_industry4
+				}
+				swap_ideas = {
+					remove_idea = POL_industry4
+					add_idea = POL_industry5
+			}
+		}
+	}
+}

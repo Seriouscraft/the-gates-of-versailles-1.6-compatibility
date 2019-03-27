@@ -1,0 +1,18 @@
+state={
+	id=823
+	name="STATE_823"
+	history = {
+		owner = USA
+		add_core_of = USA
+		add_claim_by = TEX
+		buildings = {
+			infrastructure = 2
+		}
+	}
+	provinces={
+		868 1658 1738 4586 12624 12627 13232 13240
+	}
+	manpower=100000
+	state_category=pastoral
+	buildings_max_level_factor=1.000
+}

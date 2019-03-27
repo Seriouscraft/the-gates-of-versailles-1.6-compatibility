@@ -1,0 +1,26 @@
+state={
+	id=812
+	name="STATE_812"
+	history={
+		owner = FRA
+		buildings = {
+			infrastructure = 2
+			10760 = {
+				naval_base = 3
+
+			}
+
+		}
+		victory_points = {
+			10760 3 
+		}
+		add_core_of = OMA
+
+	}
+	provinces={
+		10760 
+	}
+	manpower=32100
+	state_category=enclave
+	buildings_max_level_factor=1.000
+}

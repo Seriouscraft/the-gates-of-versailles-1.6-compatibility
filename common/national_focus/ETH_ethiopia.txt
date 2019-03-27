@@ -1,0 +1,298 @@
+focus_tree = { 
+id = ethiopia
+country = { 
+factor = 0 
+modifier = { 
+add = 10 
+tag = ETH 
+} 
+} 
+#Focus for Protector of Africa
+focus = { 
+id = ETH_protectorofafrica
+icon = GFX_protectorofafrica
+x = 3
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ETH_thelionofjudah } 
+mutually_exclusive = { focus = ETH_agreaterethiopia } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+add_opinion_modifier= { 
+target = ENG 
+modifier = anti_colonialist
+}
+add_opinion_modifier= { 
+target = FRA
+modifier = anti_colonialist
+}
+add_opinion_modifier= { 
+target = HOL
+modifier = anti_colonialist
+}
+add_opinion_modifier= { 
+target = POR
+modifier = anti_colonialist
+}
+add_opinion_modifier= { 
+target = SPR
+modifier = anti_colonialist
+}
+ } 
+
+ } 
+
+#Focus for Boer Revolt
+focus = { 
+id = ETH_boerrevolt
+icon = GFX_goal_generic_dangerous_deal
+x = 3
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ETH_attackfrenchcolonies } 
+prerequisite = { focus = ETH_attackbritishcolonies } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+SAF = {country_event= {
+days = 1 
+id = ethiopia.3
+}
+}
+ } 
+
+ } 
+
+#Focus for The Lion of Judah
+focus = { 
+id = ETH_thelionofjudah
+icon = GFX_thelionofjudah
+x = 6
+y = 0
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+available = { 
+has_country_flag= defeated_italy
+ } 
+completion_reward = { 
+add_political_power= 150
+ } 
+
+ } 
+
+#Focus for A Greater Ethiopia
+focus = { 
+id = ETH_agreaterethiopia
+icon = GFX_agreaterethiopia
+x = 9
+y = 1
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ETH_thelionofjudah } 
+mutually_exclusive = { focus = ETH_protectorofafrica } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+add_political_power= 150
+ } 
+
+ } 
+
+#Focus for Attack British Colonies
+focus = { 
+id = ETH_attackbritishcolonies
+icon = GFX_attackbritishcolonies
+x = 2
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ETH_anafricanalliance } 
+ai_will_do = { 
+ factor = 1
+ } 
+available = { 
+ENG = {has_defensive_war= yes}
+ } 
+completion_reward = { 
+declare_war_on= { 
+target = ENG
+type = annex_everything 
+}
+ } 
+
+ } 
+
+#Focus for Liberian Independence
+focus = { 
+id = ETH_liberianindependence
+icon = GFX_liberianindependence
+x = 3
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ETH_protectorofafrica } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+LIB = {country_event= {
+days = 1 
+id = ethiopia.1 
+}
+}
+ } 
+
+ } 
+
+#Focus for An African Alliance
+focus = { 
+id = ETH_anafricanalliance
+icon = GFX_anafricanalliance
+x = 3
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ETH_liberianindependence } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = { 
+LIB = {country_event= {
+days = 1 
+id = ethiopia.2
+}
+}
+ } 
+
+ } 
+
+#Focus for Attack French Colonies
+focus = { 
+id = ETH_attackfrenchcolonies
+icon = GFX_attackfrenchcolonies
+x = 4
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ETH_anafricanalliance } 
+ai_will_do = { 
+ factor = 1
+ } 
+available = { 
+FRA = {has_defensive_war= yes}
+ } 
+completion_reward = { 
+declare_war_on= { 
+target = FRA
+type = annex_everything 
+}
+ } 
+
+ } 
+
+#Focus for Demand the Sudan
+focus = { 
+id = ETH_demandthesudan
+icon = GFX_goal_poland_goal
+x = 9
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ETH_defenderofthefaith } 
+ai_will_do = { 
+ factor = 1
+ } 
+available = {
+	ENG = {
+		has_war = yes
+	}
+	has_army_manpower = {
+    size > 80000
+}
+}
+completion_reward = { 
+ENG = {country_event= {
+days = 1 
+id = ethiopia.4
+}
+}
+ } 
+
+ } 
+
+#Focus for Defender of the Faith
+focus = { 
+id = ETH_defenderofthefaith
+icon = GFX_defenderofthefaith
+x = 9
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ETH_agreaterethiopia } 
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = {
+	add_ideas = ETH_defender
+}
+ } 
+ 
+#Focus for Scramble for Egypt
+focus = { 
+id = ETH_scrambleforegypt
+icon = GFX_scrambleforegypt
+x = 9
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ETH_demandthesudan } 
+available = {
+	FRA = {
+		has_war = yes
+	}
+	has_army_manpower = {
+    size > 100000
+}
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = {
+	FRA = {
+		country_event = {
+			days = 1
+			id = ethiopia.5
+				}
+			}
+		}
+	}
+} 
+
+#Focus for Convert the People
+focus = { 
+id = ETH_convertpeople
+icon = generic_demand_territory
+x = 9
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = ETH_scrambleforegypt } 
+available = {
+	ETH = {
+		has_country_flag = FRA_submitsegypt
+	}
+}
+ai_will_do = { 
+ factor = 1
+ } 
+completion_reward = {
+} 
+}

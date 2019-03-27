@@ -1,0 +1,26 @@
+
+state={
+	id=819
+	name="STATE_819"
+
+	history={
+		owner = ARM
+		victory_points = {
+			1467 1 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+
+		}
+		add_core_of = ARM
+		add_core_of = AZR
+	}
+
+	provinces={
+		1467 9715
+	}
+	manpower=203921
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

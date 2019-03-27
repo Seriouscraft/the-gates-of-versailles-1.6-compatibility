@@ -1,0 +1,1134 @@
+﻿###########################
+# Austrian Events
+###########################
+
+add_namespace = austria
+
+# Italian Offer Event 1
+country_event = {
+	id = austria.1
+	title = austria.1.t
+	desc = austria.1.d
+	picture = GFX_report_event_soviet_soldiers
+	
+	is_triggered_only = yes
+	
+	option = { # Accept offer
+		name = austria.1.a
+		ai_chance = {
+			base = 10
+			modifier = {
+					factor = 100
+					is_in_faction_with = GER
+				}
+			}
+		AUS = {
+			country_event = { days = 1 id = austria.101 }
+			}
+		 	
+		random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+	option = { # Refuse offer (fuck you italy you get 2 free factories and you do this)
+		name = austria.1.b
+		ai_chance = {
+			base = 1
+			modifier = {
+				factor = 9999
+				has_war_with = AUS
+			}
+		}
+		AUS = {
+			country_event = { days = 1 id = austria.201 }
+		}
+	}
+}
+country_event = {
+	id = austria.101
+	title = austria.101.t
+	desc = austria.101.d
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	is_triggered_only = yes
+	
+	option = {
+	name = austria.101.a
+		random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+			}
+		}
+	}
+}
+
+country_event = {
+	id = austria.201
+	title = austria.201.t
+	desc = austria.201.d
+	picture = GFX_report_event_generic_conference
+	
+	is_triggered_only = yes
+	
+	option = { # Accept offer
+	name = austria.201.a
+		add_opinion_modifier = {
+			target = ITA
+			modifier = refused_help
+		}
+	}
+}
+
+# Deal with Britain Event 2
+country_event = {
+	id = austria.2
+	title = austria.2.t
+	desc = austria.2.d
+	picture = GFX_report_event_aid_pact
+	
+	is_triggered_only = yes
+	
+	option = { # Accept offer
+		name = austria.2.a
+		ai_chance = {
+			base = 10
+		}
+	add_tech_bonus = {
+		bonus = 0.5 
+		uses = 2 
+		category = armor
+	}
+	AUS = {
+		country_event = { days = 1 id = austria.102 }
+		}
+	}
+	option = { # Refuse offer
+		name = austria.2.b
+		ai_chance = {
+			base = 1
+			modifier = {
+				add = 9999
+				has_war_with = AUS
+			}
+		}
+		AUS = {
+			country_event = { days = 1 id = austria.202 }
+		}
+	}
+}
+
+country_event = {
+	id = austria.102
+	title = austria.102.t
+	desc = austria.102.d
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	is_triggered_only = yes
+	
+	option = {
+	name = austria.102.a
+		add_ideas = {
+			AUS_ENG_research
+		}
+	}
+}
+
+country_event = {
+	id = austria.202
+	title = austria.202.t
+	desc = austria.202.d
+	picture = GFX_report_event_generic_conference
+	
+	is_triggered_only = yes
+	
+	option = {
+	name = austria.202.a
+		add_opinion_modifier = {
+			target = AUS
+			modifier = refused_help
+		}
+	}
+}
+# Threaten Liechtenstein Event 3
+country_event = {
+	id = austria.3
+	title = austria.3.t
+	desc = austria.3.d
+	picture = GFX_report_event_german_troops
+	
+	is_triggered_only = yes
+	
+	option = { # Accept annexation
+		name = austria.3.a
+		ai_chance = {
+			base = 10
+		}
+	AUS = {
+		country_event = { days = 1 id = austria.103 }
+		}
+	custom_effect_tooltip = GAME_OVER_TT
+	}
+	option = { # Refuse demand
+		name = austria.3.b
+		ai_chance = {
+			base = 0 #this should never happen
+		}
+		AUS = {
+			country_event = { days = 1 id = austria.203 }
+		}
+	}
+}
+
+country_event = {
+	id = austria.103
+	title = austria.103.t
+	desc = austria.103.d
+	picture = GFX_report_event_german_troops
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = austria.103.a
+		annex_country = {
+			target = LIC
+			transfer_troops = yes
+		}
+	}
+}
+
+country_event = {
+	id = austria.203
+	title = austria.203.t
+	desc = austria.203.d
+	picture = GFX_report_event_generic_conference
+	
+	is_triggered_only = yes
+	
+	option = {
+	name = austria.203.a
+		declare_war_on = {
+		target = LIC
+		type = annex_everything
+	}
+}
+}
+
+# Ultimatum to Hungary Event 4
+country_event = {
+	id = austria.4
+	title = austria.4.t
+	desc = austria.4.d
+	picture = GFX_report_event_german_troops
+	
+	is_triggered_only = yes
+	
+	option = { # Accept annexation
+		name = austria.4.a
+		ai_chance = {
+			base = 2
+			modifier = {
+				factor = 4
+				has_army_manpower = {
+				size > 125000
+			}
+		}
+	}
+	AUS = {
+		country_event = { days = 1 id = austria.104 }
+		}
+	custom_effect_tooltip = GAME_OVER_TT
+	}
+	option = { # Refuse demand
+		name = austria.4.b
+		ai_chance = {
+			base = 8 #hungary is a strong nation and not likely to capitulate
+		}
+		AUS = {
+			country_event = { days = 1 id = austria.204 }
+		}
+	}
+}
+
+country_event = {
+	id = austria.104
+	title = austria.104.t
+	desc = austria.104.d
+	picture = GFX_report_event_german_politician_speech
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = austria.104.a
+		annex_country = {
+			target = HUN
+			transfer_troops = yes
+		}
+	}
+}
+
+country_event = {
+	id = austria.204
+	title = austria.204.t
+	desc = austria.204.d
+	picture = GFX_report_event_generic_conference
+	
+	is_triggered_only = yes
+	
+	option = {
+	name = austria.204.a
+		declare_war_on = {
+		target = HUN
+		type = annex_everything
+	}
+}
+}
+
+# Ultimatum to Nation Event 5
+country_event = {
+	id = austria.5
+	title = austria.5.t
+	desc = austria.5.d
+	picture = GFX_report_event_german_troops
+	
+	is_triggered_only = yes
+	
+	option = { # Accept annexation
+		name = austria.5.a
+		ai_chance = {
+			base = 5
+		}
+	AUS = {
+		country_event = { days = 1 id = austria.105 }
+		}
+	custom_effect_tooltip = GAME_OVER_TT
+	}
+	option = { # Refuse offer
+		name = austria.5.b
+		ai_chance = {
+			base = 5
+		}
+		AUS = {
+			country_event = { days = 1 id = austria.205 }
+		}
+	}
+}
+
+country_event = {
+	id = austria.105
+	title = austria.105.t
+	desc = austria.105.d
+	picture = GFX_report_event_german_politician_speech
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = austria.105.a
+		annex_country = {
+			target = FROM
+			transfer_troops = yes
+		}
+	}
+}
+
+country_event = {
+	id = austria.205
+	title = austria.205.t
+	desc = austria.205.d
+	picture = GFX_report_event_generic_conference
+	
+	is_triggered_only = yes
+	
+	option = {
+	name = austria.205.a
+		declare_war_on = {
+		target = FROM
+		type = annex_everything
+	}
+}
+}
+# Ultimatum to Serbia Event 6
+country_event = {
+	id = austria.6
+	title = austria.6.t
+	desc = austria.6.d
+	picture = GFX_report_event_german_troops
+	
+	is_triggered_only = yes
+	
+	option = { # Accept annexation
+		name = austria.6.a
+		ai_chance = {
+			base = 6
+		}
+	AUS = {
+		country_event = { days = 1 id = austria.106 }
+		}
+	}
+	option = { # Refuse offer
+		name = austria.6.b
+		ai_chance = {
+			base = 6
+		}
+		AUS = {
+			country_event = { days = 1 id = austria.206 }
+		}
+	}
+}
+
+country_event = {
+	id = austria.106
+	title = austria.106.t
+	desc = austria.106.d
+	picture = GFX_report_event_german_politician_speech
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = austria.106.a
+		puppet = YUG
+	}
+}
+
+country_event = {
+	id = austria.206
+	title = austria.206.t
+	desc = austria.206.d
+	picture = GFX_report_event_generic_conference
+	
+	is_triggered_only = yes
+	
+	option = {
+	name = austria.206.a
+		declare_war_on = {
+		target = SER
+		type = puppet_wargoal_focus
+	}
+}
+}
+
+# Demand Galicia Event 7
+country_event = {
+	id = austria.7
+	title = austria.7.t
+	desc = austria.7.d
+	picture = GFX_report_event_german_troops
+	
+	is_triggered_only = yes
+	
+	option = { # Accept annexation
+		name = austria.7.a
+		ai_chance = {
+			base = 4
+		}
+	AUS = {
+		country_event = { days = 1 id = austria.107 }
+		}
+	}
+	option = { # Refuse offer
+		name = austria.7.b
+		ai_chance = {
+			base = 8
+		}
+		AUS = {
+			country_event = { days = 1 id = austria.207 }
+		}
+	}
+}
+
+country_event = {
+	id = austria.107
+	title = austria.107.t
+	desc = austria.107.d
+	picture = GFX_report_event_german_politician_speech
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = austria.107.a
+			if = {
+				limit = {
+					POL = {
+						owns_state = 88
+				}
+			}
+			transfer_state = 88
+		}
+			if = {
+				limit = {
+					POL = {
+						owns_state = 89
+				}
+			}
+			transfer_state = 89
+		}
+			if = {
+				limit = {
+					POL = {
+						owns_state = 91
+				}
+			}
+			transfer_state = 91
+		}
+			if = {
+				limit = {
+					POL = {
+						owns_state = 773
+				}
+			}
+			transfer_state = 773
+		}
+			if = {
+				limit = {
+					POL = {
+						owns_state = 80
+				}
+			}
+			transfer_state = 80
+		}
+	}
+}
+
+country_event = {
+	id = austria.207
+	title = austria.207.t
+	desc = austria.207.d
+	picture = GFX_report_event_generic_conference
+	
+	is_triggered_only = yes
+	
+	option = {
+	name = austria.207.a
+		declare_war_on = {
+			target = POL
+			type = take_state_focus
+			generator = { 88 89 91 }
+		}
+	}
+}
+
+# Dealing with Frenchies Event 8
+country_event = {
+	id = austria.8
+	title = austria.8.t
+	desc = austria.8.d
+	picture = GFX_report_event_generic_sign_treaty2
+	
+	is_triggered_only = yes
+	
+	option = { # Accept offer
+		name = austria.8.a
+		ai_chance = {
+			base = 5
+		}
+	AUS = {
+		country_event = { days = 1 id = austria.108 }
+		}
+	BAD = {
+		leave_faction = yes
+		}
+	WES = {
+		leave_faction = yes
+		}
+	hidden_effect = {
+		FRA = {
+			set_country_flag = FRA_promise
+		}
+	}
+	}
+	option = { # Refuse offer
+		name = austria.8.b
+		ai_chance = {
+			base = 20 #givig up west germany is pretty stupid
+		}
+		AUS = {
+			country_event = { days = 1 id = austria.208 }
+		}
+	}
+	option = { # Accept offer but with conditions
+		name = austria.8.c
+		ai_chance = {
+			base = 15
+		}
+	AUS = {
+		country_event = { days = 1 id = austria.308 }
+		}
+	}
+}
+
+country_event = {
+	id = austria.108
+	title = austria.108.t
+	desc = austria.108.d
+	picture = GFX_report_event_german_politician_speech
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = austria.108.a
+		declare_war_on = {
+			target = BAD
+			type = annex_everything
+		}
+		declare_war_on = {
+			target = WES
+			type = annex_everything
+		}
+	}
+}
+
+country_event = {
+	id = austria.208
+	title = austria.208.t
+	desc = austria.208.d
+	picture = GFX_report_event_generic_conference
+	
+	is_triggered_only = yes
+	
+	option = {
+	name = austria.208.a
+}
+}
+country_event = {
+	id = austria.308
+	title = austria.308.t
+	desc = austria.308.d
+	picture = GFX_report_event_generic_conference
+	
+	is_triggered_only = yes
+	
+	option = {
+	name = austria.308.a
+	diplomatic_relation = {
+    country = FRA
+    relation = non_aggression_pact
+    active = yes
+	}
+	hidden_effect = {
+		FRA = {
+			set_country_flag = FRA_promise
+		}
+	}	
+}
+	option = {
+	name = austria.308.b
+}
+}
+
+# Austria likes jews now Event 9
+country_event = {
+	id = austria.9
+	title = austria.9.t
+	desc = austria.9.d
+	picture = GFX_report_event_ger_civil_war
+	
+	is_triggered_only = yes
+	
+	option = { # yeet this from the nazis boys
+		name = austria.9.a
+		hidden_effect = {
+				set_country_flag = AUS_civil_war
+				set_capital = 152
+				leave_faction = yes
+			start_civil_war = {
+				ruling_party = neutrality
+				ideology = fascism
+				size = 0.5
+				states = { 4 153 39 }
+			}
+			random_other_country = {
+				limit = {
+					original_tag = AUS
+					has_government = fascism
+				}
+				load_oob = "AUS_militia2"
+			}
+			load_oob = "AUS_militia1"
+		}
+	}
+}
+
+
+# King is back Event 10
+country_event = {
+	id = austria.10
+	title = austria.10.t
+	desc = austria.10.d
+	picture = GFX_report_event_king_speech
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = austria.10.a
+		create_country_leader = {
+			name = "Otto von Habsburg"
+			desc = "POLITICS_OTTO_DESC"
+			picture = "Portrait_AUS_Otto_von_Habsburg.dds"
+			expire = "1965.1.1"
+			ideology = despotism
+			traits = {
+				
+			}
+		}
+		hidden_effect = {
+			set_party_name = { 
+				ideology = neutrality 
+				long_name = AUS_monarchy_long
+				name = AUS_monarchy
+			}
+		}
+	}
+}
+
+
+# Invite Faction Member Event 11
+country_event = {
+	id = austria.11
+	title = austria.11.t
+	desc = austria.11.d
+	picture = GFX_report_event_generic_conference
+	
+	is_triggered_only = yes
+	option = {
+		name = austria.11.a
+		ai_chance = {
+			base = 12
+		}
+		add_ai_strategy = {
+			type = alliance
+			id = "AUS"
+			value = 200
+		}
+		AUS = {
+				country_event = austria.111
+				add_to_faction = ROOT
+				
+			}
+		}
+	option = {
+		name = austria.11.b
+		ai_chance = {
+			base = 6
+		}
+		AUS = {
+			country_event = { days = 1 id = austria.211 }
+		}
+	}
+}
+
+country_event = {
+	id = austria.111
+	title = austria.111.t
+	desc = austria.111.d
+	picture = GFX_report_event_german_politician_speech
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = austria.111.a
+		effect_tooltip = {
+			add_to_faction = FROM
+		}
+	}
+}
+
+country_event = {
+	id = austria.211
+	title = austria.211.t
+	desc = austria.211.d
+	picture = GFX_report_event_generic_conference
+	
+	is_triggered_only = yes
+	
+	option = {
+	name = austria.211.a
+}
+}
+
+# Election Event 12
+country_event = {
+	id = austria.12
+	title = austria.12.t
+	desc = austria.12.d
+	picture = GFX_report_event_election_vote
+	
+	is_triggered_only = yes
+	option = {
+		name = austria.12.a
+		ai_chance = {
+			base = 8
+		}
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.1
+		}
+		set_politics = {
+			ruling_party = democratic
+			elections_allowed = yes
+		}
+	}
+	option = {
+		name = austria.12.b
+		ai_chance = {
+			base = 4
+		}
+		add_popularity = {
+			ideology = liberal
+			popularity = 0.15
+		}
+		set_politics = {
+			ruling_party = liberal
+			elections_allowed = yes
+		}
+	}
+	option = {
+		name = austria.12.c
+		ai_chance = {
+			base = 4
+		}
+		add_popularity = {
+			ideology = social_democratic
+			popularity = 0.1
+		}
+		set_politics = {
+			ruling_party = social_democratic
+			elections_allowed = yes
+		}
+	}
+}
+
+# Austrian Constitution Event 13
+country_event = {
+	id = austria.13
+	title = austria.13.t
+	desc = austria.13.d
+	picture = GFX_report_event_ast_parliament_house
+	
+	is_triggered_only = yes
+	option = {
+		name = austria.13.a
+		if= {
+			limit = {
+				has_country_flag = AUS_conservative_constitution
+			}
+			add_ideas = { AUS_conservative_constitution }
+		}
+		if= {
+			limit = {
+				has_country_flag = AUS_liberal_constitution
+			}
+			add_ideas = { AUS_liberal_constitution }
+		}
+		if= {
+			limit = {
+				has_country_flag = AUS_socdem_constitution
+			}
+			add_ideas = { AUS_socdem_constitution }
+		}
+	}
+}
+
+# Ask Britain to join Entente Event 14
+country_event = {
+	id = austria.14
+	title = austria.14.t
+	desc = austria.14.d
+	picture = GFX_report_event_ast_parliament_house
+	
+	is_triggered_only = yes
+		option = {
+		name = austria.14.a
+		ai_chance = { factor = 90 }
+		add_to_faction = AUS
+		AUS = { country_event = austria.114 }
+	}
+
+	option = {
+		name = austria.14.b
+		ai_chance = { factor = 10 }
+		AUS = { country_event = austria.214 }
+	}
+}
+
+country_event = {
+	id = austria.114
+	title = austria.114.t
+	desc = austria.114.d
+	picture = GFX_report_event_german_politician_speech
+	
+	is_triggered_only = yes
+		option = {
+		name = austria.114.a
+		add_ai_strategy = {
+			type = alliance
+			id = "ENG"
+			value = 250
+		}
+	}
+}
+
+country_event = {
+	id = austria.214
+	title = austria.214.t
+	desc = austria.214.d
+	picture = GFX_report_event_generic_conference
+	
+	is_triggered_only = yes
+	option = {
+		name = austria.214.a
+		ai_chance = { factor = 50 }
+		FRA = {
+			country_event = {
+				id = austria.15
+				days = 1
+			}
+		}
+	}
+	option = {
+		name = austria.214.b
+		ai_chance = { factor = 50 }
+		add_ideas = neutrality_idea
+		
+	}
+}
+
+# Ask France to join Cont. Alliance Event 15
+country_event = {
+	id = austria.15
+	title = austria.15.t
+	desc = austria.15.d
+	picture = GFX_report_event_ast_parliament_house
+	
+	is_triggered_only = yes
+		option = {
+		name = austria.15.a
+		ai_chance = { factor = 90 }
+		add_to_faction = AUS
+		AUS = { country_event = austria.115 }
+	}
+
+	option = {
+		name = austria.15.b
+		ai_chance = { factor = 10 }
+		AUS = { country_event = austria.215 }
+	}
+}
+
+country_event = {
+	id = austria.115
+	title = austria.115.t
+	desc = austria.115.d
+	picture = GFX_report_event_german_politician_speech
+	
+	is_triggered_only = yes
+		option = {
+		name = austria.115.a
+		add_ai_strategy = {
+			type = alliance
+			id = "FRA"
+			value = 250
+		}
+	}
+}
+
+country_event = {
+	id = austria.215
+	title = austria.215.t
+	desc = austria.215.d
+	picture = GFX_report_event_generic_conference
+	
+	is_triggered_only = yes
+	option = {
+		name = austria.215.a
+		ai_chance = { factor = 50 }
+		ENG = {
+			country_event = {
+				id = austria.14
+				days = 1
+			}
+		}
+	}
+	option = {
+		name = austria.215.b
+		ai_chance = { factor = 50 }
+		add_ideas = neutrality_idea
+		
+	}
+}
+
+# Integrate Hungarians Event 16
+country_event = {
+	id = austria.16
+	title = austria.16.t
+	desc = austria.16.d
+	picture = GFX_report_event_soldiers_in_france
+	
+	is_triggered_only = yes
+		option = {
+		name = austria.16.a
+		hidden_effect = {
+			every_owned_state = {
+				limit = {
+					is_core_of = HUN
+				}
+				add_core_of = AUS
+			}
+		}
+	}
+}
+
+# Integrate Czechs Event 17
+country_event = {
+	id = austria.17
+	title = austria.17.t
+	desc = austria.17.d
+	picture = GFX_report_event_soldiers_in_france
+	
+	is_triggered_only = yes
+		option = {
+		name = austria.17.a
+		hidden_effect = {
+			every_owned_state = {
+				limit = {
+					is_core_of = CZE
+				}
+				add_core_of = AUS
+			}
+		}
+	}
+}
+
+# Integrate Slovakians Event 18
+country_event = {
+	id = austria.18
+	title = austria.18.t
+	desc = austria.18.d
+	picture = GFX_report_event_soldiers_in_france
+	
+	is_triggered_only = yes
+		option = {
+		name = austria.18.a
+		hidden_effect = {
+			every_owned_state = {
+				limit = {
+					is_core_of = SLO
+				}
+				add_core_of = AUS
+			}
+		}
+	}
+}
+
+# Integrate Croatians Event 19
+country_event = {
+	id = austria.19
+	title = austria.19.t
+	desc = austria.19.d
+	picture = GFX_report_event_soldiers_in_france
+	
+	is_triggered_only = yes
+		option = {
+		name = austria.19.a
+		hidden_effect = {
+			every_owned_state = {
+				limit = {
+					is_core_of = CRO
+				}
+				add_core_of = AUS
+			}
+		}
+	}
+}
+
+# Integrate Polish Event 20
+country_event = {
+	id = austria.20
+	title = austria.20.t
+	desc = austria.20.d
+	picture = GFX_report_event_soldiers_in_france
+	
+	is_triggered_only = yes
+		option = {
+		name = austria.20.a
+		hidden_effect = {
+			every_owned_state = {
+				limit = {
+					is_core_of = POL
+				}
+				add_core_of = AUS
+			}
+		}
+	}
+}
+
+# Polish Puppet State Event 21
+country_event = {
+	id = austria.21
+	title = austria.21.t
+	desc = austria.21.d
+	picture = GFX_report_event_riot_police_poland
+	
+		trigger = {
+			AUS = {
+			has_full_control_of_state = 10
+			}
+		}
+
+		fire_only_once = yes
+		mean_time_to_happen = { days = 0 }
+		option = {
+		name = austria.21.a
+		hidden_effect = {
+			release_puppet = POL
+			AUS = {
+				if = {
+					limit = {
+						POL = {
+							owns_state = 88
+						}
+					}
+				transfer_state = 88
+				}
+				if = {
+					limit = {
+						POL = {
+							owns_state = 89
+						}
+					}
+				transfer_state = 89
+				}
+				if = {
+					limit = {
+						POL = {
+							owns_state = 91
+						}
+					}
+				transfer_state = 91
+				}
+				if = {
+					limit = {
+						POL = {
+							owns_state = 80
+						}
+					}
+				transfer_state = 80
+				}
+				if = {
+					limit = {
+						POL = {
+							owns_state = 773
+						}
+					}
+				transfer_state = 773
+				}
+			}
+		}
+	}
+}

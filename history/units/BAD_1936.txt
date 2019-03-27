@@ -1,0 +1,30 @@
+﻿division_template = {
+	name = "Infanterie-Division"
+
+	division_names_group = GER_Inf_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+}
+
+units = {
+
+division= {	
+		name = "1. Badisches Unternehmen" 
+		location = 3530
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.1
+	}
+
+division= {	
+		name = "2. Badisches Unternehmen" 
+		location = 3692
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.1
+	}

@@ -1,0 +1,18 @@
+state={
+	id=803
+	name="STATE_803"
+	history={
+		owner = VEN
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = VEN
+
+	}
+	provinces={
+		1997 4526 5088 10855 
+	}
+	manpower=482100
+	state_category=rural
+	buildings_max_level_factor=1.000
+}

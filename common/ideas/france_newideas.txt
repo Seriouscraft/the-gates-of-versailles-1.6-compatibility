@@ -1,0 +1,25 @@
+ideas = {
+
+	country = {
+		FRA_fear_of_democratic_coup = {
+			
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = GFX_idea_FRA_scw_intervention_republicans_focus
+			
+			modifier = {
+				democratic_acceptance = -85
+			}
+		}
+		
+	}
+}

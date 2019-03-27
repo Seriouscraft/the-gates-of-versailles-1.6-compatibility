@@ -1,0 +1,21 @@
+state={
+	id=862
+	name="STATE_862"
+
+	history={
+		owner = SYR
+		add_core_of = SYR
+		buildings = {
+			infrastructure = 1
+
+		}
+
+	}
+
+	provinces={
+		1606 1634 3942 6883 13229
+	}
+	manpower=81200
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+}

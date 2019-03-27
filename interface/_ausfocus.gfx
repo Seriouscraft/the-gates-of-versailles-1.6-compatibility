@@ -1,0 +1,105 @@
+spriteTypes = {
+
+		###### Focus icons for Austria
+
+	SpriteType = {
+	name = "GFX_AUS_austria"
+	texturefile = "gfx/interface/goals/AUS_austria.dds"			
+	}	
+	SpriteType = {
+	name = "GFX_AUS_autarky"
+	texturefile = "gfx/interface/goals/AUS_autarky.dds"			
+	}	
+	SpriteType = {
+	name = "GFX_AUS_BAV"
+	texturefile = "gfx/interface/goals/AUS_BAV.dds"			
+	}	
+	SpriteType = {
+	name = "GFX_AUS_austria"
+	texturefile = "gfx/interface/goals/AUS_austria.dds"			
+	}	
+	SpriteType = {
+	name = "GFX_AUS_CRO"
+	texturefile = "gfx/interface/goals/AUS_CRO.dds"			
+	}	
+	SpriteType = {
+	name = "GFX_AUS_CZE"
+	texturefile = "gfx/interface/goals/AUS_CZE.dds"			
+	}	
+	SpriteType = {
+	name = "GFX_AUS_dominate_serbia"
+	texturefile = "gfx/interface/goals/AUS_dominate_serbia.dds"			
+	}	
+	SpriteType = {
+	name = "GFX_AUS_glory"
+	texturefile = "gfx/interface/goals/AUS_glory.dds"			
+	}	
+	SpriteType = {
+	name = "GFX_AUS_HUN"
+	texturefile = "gfx/interface/goals/AUS_HUN.dds"			
+	}	
+	SpriteType = {
+	name = "GFX_AUS_industry"
+	texturefile = "gfx/interface/goals/AUS_industry.dds"			
+	}	
+	SpriteType = {
+	name = "GFX_AUS_italian_deal"
+	texturefile = "gfx/interface/goals/AUS_italian_deal.dds"			
+	}	
+	SpriteType = {
+	name = "GFX_AUS_legacy"
+	texturefile = "gfx/interface/goals/AUS_legacy.dds"			
+	}	
+	SpriteType = {
+	name = "GFX_AUS_mil_proffesionalism"
+	texturefile = "gfx/interface/goals/AUS_mil_proffesionalism.dds"			
+	}	
+	SpriteType = {
+	name = "GFX_AUS_monarchy"
+	texturefile = "gfx/interface/goals/AUS_monarchy.dds"			
+	}	
+	SpriteType = {
+	name = "GFX_AUS_navy"
+	texturefile = "gfx/interface/goals/AUS_navy.dds"			
+	}	
+	SpriteType = {
+	name = "GFX_AUS_patriotism"
+	texturefile = "gfx/interface/goals/AUS_patriotism.dds"			
+	}	
+	SpriteType = {
+	name = "GFX_AUS_rebuild_nation"
+	texturefile = "gfx/interface/goals/AUS_rebuild_nation.dds"			
+	}	
+	SpriteType = {
+	name = "GFX_AUS_restore_monarchy"
+	texturefile = "gfx/interface/goals/AUS_restore_monarchy.dds"			
+	}	
+	SpriteType = {
+	name = "GFX_AUS_rifle_research"
+	texturefile = "gfx/interface/goals/AUS_rifle_research.dds"			
+	}	
+	SpriteType = {
+	name = "GFX_AUS_right_to_arms"
+	texturefile = "gfx/interface/goals/AUS_right_to_arms.dds"			
+	}	
+	SpriteType = {
+	name = "GFX_AUS_SER"
+	texturefile = "gfx/interface/goals/AUS_SER.dds"			
+	}	
+	SpriteType = {
+	name = "GFX_AUS_SLO"
+	texturefile = "gfx/interface/goals/AUS_SLO.dds"			
+	}	
+	SpriteType = {
+	name = "GFX_AUS_tank_research"
+	texturefile = "gfx/interface/goals/AUS_tank_research.dds"			
+	}	
+	SpriteType = {
+	name = "GFX_AUS_volkswagen"
+	texturefile = "gfx/interface/goals/AUS_volkswagen.dds"			
+	}	
+	SpriteType = {
+	name = "GFX_AUS_WUR"
+	texturefile = "gfx/interface/goals/AUS_WUR.dds"			
+	}	
+}

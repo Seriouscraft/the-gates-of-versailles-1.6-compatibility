@@ -1,0 +1,89 @@
+ideas = {
+
+	government_type_slot = { 
+		law = yes
+		absolute_monarchy = {
+			
+		
+			allowed = {
+				always = yes
+			}
+			
+			cost = 0
+			removal_cost = -1
+			
+			
+			modifier = {
+				generate_wargoal_tension = -0.15
+				join_faction_tension = -0.20
+				lend_lease_tension = -0.3
+				send_volunteers_tension = -0.10
+				guarantee_tension = 0.20
+				guarantee_cost = 0.2
+				war_support_factor = 0.5
+				war_support_weekly = 0.001
+				enemy_partisan_effect = -0.2
+			}
+			
+			cancel_if_invalid = yes
+		}
+		
+		constitutional_monarchy = {
+			
+			
+			allowed = {
+				always = no
+			}
+			
+			cost = 0
+			removal_cost = -1
+			
+			available = {
+				has_government = neutrality
+			}
+		
+			modifier = {
+				generate_wargoal_tension = -0.05
+				join_faction_tension = -0.05
+				lend_lease_tension = -0.2
+				send_volunteers_tension = -0.05
+				guarantee_tension = 0.10
+				guarantee_cost = 0.1
+				stability_factor = 0.5
+				war_support_weekly = 0.0001
+				enemy_partisan_effect = -0.1
+			}
+			
+			cancel_if_invalid = yes
+		}
+		
+		socialist_republic = {
+			
+			
+			allowed = {
+				always = no
+			}
+			
+			cost = 0
+			removal_cost = -1
+			
+			available = {
+				has_government = communism
+			}
+		
+			modifier = {
+				generate_wargoal_tension = -0.15
+				join_faction_tension = -0.20
+				lend_lease_tension = -0.4
+				send_volunteers_tension = -0.10
+				guarantee_tension = 0.15
+				guarantee_cost = 0.2
+				war_support_factor = 0.5
+				war_support_weekly = 0.001
+				enemy_partisan_effect = -0.2
+			}
+			
+			cancel_if_invalid = yes
+		}
+	}
+}

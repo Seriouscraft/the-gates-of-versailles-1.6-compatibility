@@ -1,0 +1,28 @@
+state={
+	id=811
+	name="STATE_811"
+	history={
+		owner = ENG
+		buildings = {
+			infrastructure = 5
+			air_base = 2
+			4206 = {
+				naval_base = 3
+
+			}
+
+		}
+		victory_points = {
+			4206 1 
+		}
+		add_core_of = PAL
+		add_core_of = ISR
+
+	}
+	provinces={
+		4206 
+	}
+	manpower=21200
+	state_category=enclave
+	buildings_max_level_factor=1.000
+}

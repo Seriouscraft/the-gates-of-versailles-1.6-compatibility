@@ -1,0 +1,46 @@
+﻿division_template = {
+	name = "Infanterie-Division"
+
+	division_names_group = GER_Inf_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+	}
+}
+
+units = {
+
+division= {	
+		name = "1. Württembergische Infanterie-Abteilung" 
+		location = 9517
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.2
+	}
+
+division= {	
+		name = "2. Württembergische Infanterie-Abteilung" 
+		location = 9517
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.2
+	}
+
+division= {	
+		name = "3. Württembergische Infanterie-Abteilung" 
+		location = 6934
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.2
+	}
+
+division= {	
+		name = "4. Württembergische Infanterie-Abteilung" 
+		location = 9545
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.2
+	}

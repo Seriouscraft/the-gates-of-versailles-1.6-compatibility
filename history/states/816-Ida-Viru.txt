@@ -1,0 +1,18 @@
+state={
+	id=816
+	name="STATE_816"
+	history = {
+		owner = SOV
+		add_core_of = SOV
+		add_core_of = EST
+		buildings = {
+			infrastructure = 4
+		}
+	}
+	provinces={
+		4640 11443 13127
+	}
+	manpower=67810
+	state_category=pastoral
+	buildings_max_level_factor=1.000
+}

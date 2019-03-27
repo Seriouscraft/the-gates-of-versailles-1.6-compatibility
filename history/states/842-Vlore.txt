@@ -1,0 +1,32 @@
+state={
+	id=842
+	name="STATE_842"
+	history={
+		owner = ALB
+		victory_points = {
+			9914 5 
+		}
+		buildings = {
+			infrastructure = 2
+			11767 = {
+				naval_base = 4
+
+			}
+
+		}
+		add_core_of = ALB
+		1939.4.12 = {
+			owner = ITA
+			controller = ITA
+			remove_claim_by = ITA
+
+		}
+
+	}
+	provinces={
+		11767 
+	}
+	manpower=27800
+	state_category=enclave
+	buildings_max_level_factor=1.000
+}

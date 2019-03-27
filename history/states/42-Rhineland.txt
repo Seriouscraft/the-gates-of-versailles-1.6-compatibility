@@ -1,0 +1,29 @@
+
+state={
+	id=42
+	name="STATE_42"
+	resources={
+		steel=59.000
+		aluminium=14.000
+	}
+
+	history={
+		owner = FRA
+		victory_points = {
+			11435 10 
+		}
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 2
+
+		}
+
+	}
+
+	provinces={
+		563 3423 3558 11547 11560 13212 13239
+	}
+	manpower=2217739
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+}

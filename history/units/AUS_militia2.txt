@@ -1,0 +1,75 @@
+﻿division_template = {
+	name = "Milizabteilung"
+	division_names_group = AUS_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+}
+
+units = {
+	##### Milizabteilung #####
+	division= {	
+		name = "I. Milizabteilung"
+		location = 9527
+		division_template = "Milizabteilung"
+		start_equipment_factor = 1
+
+	}
+	division= {	
+		name = "II. Milizabteilung"
+		location = 704
+		division_template = "Milizabteilung"
+		start_equipment_factor = 1
+
+	}
+	division= {	
+		name = "III. Milizabteilung"
+		location = 9679
+		division_template = "Milizabteilung"
+		start_equipment_factor = 1
+
+	}
+	division= {	
+		name = "IV. Milizabteilung"
+		location = 653
+		division_template = "Milizabteilung"
+		start_equipment_factor = 1
+
+	}
+	division= {	
+		name = "V. Milizabteilung"
+		location = 9646
+		division_template = "Milizabteilung"
+		start_equipment_factor = 1
+
+	}
+	division= {	
+		name = "V. Milizabteilung"
+		location = 3675
+		division_template = "Milizabteilung"
+		start_equipment_factor = 1
+
+	}
+	division= {	
+		name = "V. Milizabteilung"
+		location = 668
+		division_template = "Milizabteilung"
+		start_equipment_factor = 1
+
+	}
+	division= {	
+		name = "V. Milizabteilung"
+		location = 6673
+		division_template = "Milizabteilung"
+		start_equipment_factor = 1
+	}
+}

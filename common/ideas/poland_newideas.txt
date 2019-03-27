@@ -1,0 +1,250 @@
+ideas = {
+
+	country = {
+			POL_industry = {
+
+				allowed = {
+					original_tag = POL
+					always = yes
+				}
+
+				allowed_civil_war = {
+					always = yes
+				}
+
+				picture = generic_goods_red_bonus
+
+				removal_cost = -1
+
+				modifier = {
+					production_speed_infrastructure_factor = -0.1
+					consumer_goods_factor = 0.1
+					industrial_capacity_factory = -0.15
+					production_factory_efficiency_gain_factor = -0.1
+					production_speed_buildings_factor = -0.15
+				}
+			}
+
+			POL_industry2 = {
+
+				allowed = {
+					original_tag = POL
+					always = no
+				}
+
+				allowed_civil_war = {
+					always = yes
+				}
+
+				picture = generic_goods_red_bonus
+
+				removal_cost = -1
+
+				modifier = {
+					production_speed_infrastructure_factor = -0.05
+					consumer_goods_factor = 0.1
+					industrial_capacity_factory = -0.1
+					production_factory_efficiency_gain_factor = -0.1
+					production_speed_buildings_factor = -0.10
+				}
+			}
+
+		POL_industry3 = {
+
+				allowed = {
+					original_tag = POL
+					always = no
+				}
+
+				allowed_civil_war = {
+					always = yes
+				}
+
+				picture = generic_goods_red_bonus
+
+				removal_cost = -1
+
+				modifier = {
+					production_speed_infrastructure_factor = -0.05
+					consumer_goods_factor = 0.1
+					industrial_capacity_factory = -0.08
+					production_factory_efficiency_gain_factor = -0.1
+					production_speed_buildings_factor = -0.10
+				}
+			}
+
+			POL_industry4 = {
+
+				allowed = {
+					original_tag = POL
+					always = no
+				}
+
+				allowed_civil_war = {
+					always = yes
+				}
+
+				picture = generic_goods_red_bonus
+
+				removal_cost = -1
+
+				modifier = {
+					consumer_goods_factor = 0.05
+					industrial_capacity_factory = -0.05
+					production_factory_efficiency_gain_factor = -0.05
+					production_speed_buildings_factor = -0.05
+				}
+			}
+
+			POL_industry5 = {
+
+				allowed = {
+					original_tag = POL
+					always = no
+				}
+
+				allowed_civil_war = {
+					always = yes
+				}
+
+				picture = man_five_year_plan_industry
+
+				removal_cost = -1
+
+				modifier = {
+					industrial_capacity_factory = 0.1
+					production_factory_efficiency_gain_factor = 0.1
+					production_speed_buildings_factor = 0.1
+				}
+			}
+
+
+		military_in_charge = {
+				
+					allowed = {
+						original_tag = POL
+						always = yes
+					}
+
+					allowed_civil_war = {
+						always = no
+					}
+
+					removal_cost = -1
+
+					picture = general_staff
+				
+					modifier = {
+						army_org_factor = -0.1
+						army_leader_cost_factor = 0.25
+						command_power_gain_mult = -0.25
+					}
+			}
+		
+		the_polish_spirit = {
+
+						allowed = {
+							original_tag = POL
+							always = yes
+						}
+
+						allowed_civil_war = {
+							always = yes
+						}
+
+						removal_cost = -1
+
+						picture = fixed_polish_idea
+
+						modifier = {
+							surrender_limit = 0.1
+							army_core_defence_factor = 0.05
+							partisan_effect = 0.05
+						}
+				}
+
+		catholic_influence = {
+				
+					allowed = {
+						original_tag = POL
+						always = yes
+					}
+
+					allowed_civil_war = {
+						always = yes
+					}
+
+					removal_cost = -1
+
+					picture = poland_catholic_influence
+				
+					modifier = {
+						political_power_factor = -0.15
+						war_support_factor = 0.05
+					}
+			}
+
+		unpopular_in_the_military = {
+				
+					allowed = {
+						original_tag = POL
+						always = yes
+					}
+
+					allowed_civil_war = {
+						always = no
+					}
+
+					removal_cost = -1
+
+					picture = generic_intel_bonus
+				
+					modifier = {
+						stability_factor = -0.2
+						war_support_factor = -0.05
+						political_power_cost = 0.1
+					}
+			}
+
+		cheap_guns = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = ast_volunteer_defence_corps
+
+			removal_cost = -1
+			
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.05 instant = yes
+				}
+			}
+		}
+
+		ursus = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = motorized_focus
+
+			removal_cost = -1
+
+			modifier = {
+				motorized_attack_factor = 0.05
+				motorized_defence_factor = 0.05
+			}
+		}
+	}
+}

@@ -1,0 +1,385 @@
+focus_tree = {
+	id = ENG
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ENG
+		}
+	}
+	default = no
+	focus = {
+		id = ENG_industrial_revamp
+		icon = GFX_goal_generic_air_production
+		cost = 0.00
+		x = 22
+		y = 0
+
+	}
+	focus = {
+		id = ENG_royal_navy
+		icon = GFX_goal_generic_navy_cruiser
+		cost = 0.00
+		x = 38
+		y = 0
+
+	}
+	focus = {
+		id = ENG_start_conscription
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 0.00
+		x = 50
+		y = 0
+
+	}
+	focus = {
+		id = ENG_royal_air_force
+		icon = GFX_goal_generic_air_doctrine
+		cost = 0.00
+		x = 66
+		y = 0
+
+	}
+	focus = {
+		id = ENG_war_industry
+		icon = GFX_goal_generic_small_arms
+		cost = 0.00
+		prerequisite = {
+			focus = ENG_industrial_revamp
+		}
+		x = 19
+		y = 1
+
+	}
+	focus = {
+		id = ENG_scotland_arms
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 0.00
+		prerequisite = {
+			focus = ENG_war_industry
+		}
+		x = 18
+		y = 2
+
+	}
+	focus = {
+		id = ENG_scotland_dock
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 0.00
+		prerequisite = {
+			focus = ENG_scotland_arms
+		}
+		x = 18
+		y = 3
+
+	}
+	focus = {
+		id = ENG_cromwell_arms
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 0.00
+		prerequisite = {
+			focus = ENG_war_industry
+		}
+		x = 20
+		y = 2
+
+	}
+	focus = {
+		id = ENG_cromwell_dock
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 0.00
+		prerequisite = {
+			focus = ENG_cromwell_arms
+		}
+		x = 20
+		y = 3
+
+	}
+	focus = {
+		id = ENG_civilian_industry
+		icon = GFX_goal_generic_consumer_goods
+		cost = 0.00
+		prerequisite = {
+			focus = ENG_industrial_revamp
+		}
+		x = 25
+		y = 1
+
+	}
+	focus = {
+		id = ENG_wales_cic
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 0.00
+		prerequisite = {
+			focus = ENG_civilian_industry
+		}
+		x = 24
+		y = 2
+
+	}
+	focus = {
+		id = ENG_wales_infra
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 0.00
+		prerequisite = {
+			focus = ENG_wales_cic
+		}
+		x = 24
+		y = 3
+
+	}
+	focus = {
+		id = ENG_london_cic
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 0.00
+		prerequisite = {
+			focus = ENG_civilian_industry
+		}
+		x = 26
+		y = 2
+
+	}
+	focus = {
+		id = ENG_london_infra
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 0.00
+		prerequisite = {
+			focus = ENG_london_cic
+		}
+		x = 26
+		y = 3
+
+	}
+	focus = {
+		id = ENG_rms_hood
+		icon = GFX_goal_generic_navy_battleship
+		cost = 0.00
+		prerequisite = {
+			focus = ENG_royal_navy
+		}
+		mutually_exclusive = {
+			focus = ENG_convoy_raiding
+		}
+		x = 37
+		y = 1
+
+	}
+	focus = {
+		id = ENG_convoy_raiding
+		icon = GFX_goal_generic_navy_anti_submarine
+		cost = 0.00
+		prerequisite = {
+			focus = ENG_royal_navy
+		}
+		mutually_exclusive = {
+			focus = ENG_rms_hood
+		}
+		x = 39
+		y = 1
+
+	}
+	focus = {
+		id = ENG_naval_doctrine_science
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		cost = 0.00
+		prerequisite = {
+			focus = ENG_rms_hood
+			focus = ENG_convoy_raiding
+		}
+		x = 38
+		y = 2
+
+	}
+	focus = {
+		id = ENG_tank_doctrine
+		icon = GFX_goal_generic_army_tanks
+		cost = 0.00
+		prerequisite = {
+			focus = ENG_start_conscription
+		}
+		x = 46
+		y = 1
+
+	}
+	focus = {
+		id = ENG_cruiser_tanks
+		icon = GFX_goal_generic_army_tanks
+		cost = 0.00
+		prerequisite = {
+			focus = ENG_tank_doctrine
+		}
+		mutually_exclusive = {
+			focus = ENG_infantry_tanks
+		}
+		x = 45
+		y = 2
+
+	}
+	focus = {
+		id = ENG_infantry_tanks
+		icon = GFX_goal_generic_army_tanks
+		cost = 0.00
+		prerequisite = {
+			focus = ENG_tank_doctrine
+		}
+		mutually_exclusive = {
+			focus = ENG_cruiser_tanks
+		}
+		x = 47
+		y = 2
+
+	}
+	focus = {
+		id = ENG_infantry_doctrine
+		icon = GFX_goal_generic_position_armies
+		cost = 0.00
+		prerequisite = {
+			focus = ENG_start_conscription
+		}
+		x = 50
+		y = 1
+
+	}
+	focus = {
+		id = ENG_training_procedure
+		icon = GFX_goal_generic_secret_weapon
+		cost = 0.00
+		prerequisite = {
+			focus = ENG_infantry_doctrine
+		}
+		mutually_exclusive = {
+			focus = ENG_mass_assault
+		}
+		x = 49
+		y = 2
+
+	}
+	focus = {
+		id = ENG_mass_assault
+		icon = GFX_goal_generic_CAS
+		cost = 0.00
+		prerequisite = {
+			focus = ENG_infantry_doctrine
+		}
+		mutually_exclusive = {
+			focus = ENG_training_procedure
+		}
+		x = 51
+		y = 2
+
+	}
+	focus = {
+		id = ENG_motorized_doctrine
+		icon = GFX_goal_generic_army_motorized
+		cost = 0.00
+		prerequisite = {
+			focus = ENG_start_conscription
+		}
+		x = 54
+		y = 1
+
+	}
+	focus = {
+		id = ENG_bomber_effort
+		icon = GFX_goal_generic_air_bomber
+		cost = 0.00
+		prerequisite = {
+			focus = ENG_royal_air_force
+		}
+		x = 60
+		y = 1
+
+	}
+	focus = {
+		id = ENG_conventional_bomb
+		icon = GFX_goal_poland_goal
+		cost = 0.00
+		prerequisite = {
+			focus = ENG_bomber_effort
+		}
+		mutually_exclusive = {
+			focus = ENG_atomic_research
+		}
+		x = 59
+		y = 2
+
+	}
+	focus = {
+		id = ENG_atomic_research
+		icon = GFX_focus_wonderweapons
+		cost = 0.00
+		prerequisite = {
+			focus = ENG_bomber_effort
+		}
+		prerequisite = {
+			focus = ENG_bomber_effort
+		}
+		mutually_exclusive = {
+			focus = ENG_conventional_bomb
+		}
+		x = 61
+		y = 2
+
+	}
+	focus = {
+		id = ENG_fighter_effort
+		icon = GFX_goal_generic_air_fighter2
+		cost = 0.00
+		prerequisite = {
+			focus = ENG_royal_air_force
+		}
+		x = 64
+		y = 1
+
+	}
+	focus = {
+		id = ENG_cas_effort
+		icon = GFX_goal_generic_air_fighter
+		cost = 0.00
+		prerequisite = {
+			focus = ENG_royal_air_force
+		}
+		x = 68
+		y = 1
+
+	}
+	focus = {
+		id = ENG_fortress_home
+		icon = GFX_goal_generic_construct_military
+		cost = 0.00
+		prerequisite = {
+			focus = ENG_cruiser_tanks
+			focus = ENG_infantry_tanks
+			focus = ENG_training_procedure
+			focus = ENG_mass_assault
+		}
+		x = 48
+		y = 4
+
+	}
+	focus = {
+		id = ENG_full_offensive
+		icon = GFX_goal_generic_army_artillery2
+		cost = 0.00
+		prerequisite = {
+			focus = ENG_cruiser_tanks
+			focus = ENG_infantry_tanks
+			focus = ENG_training_procedure
+			focus = ENG_mass_assault
+		}
+		x = 52
+		y = 4
+
+	}
+	focus = {
+		id = ENG_naval_support
+		icon = GFX_goal_generic_air_naval_bomber
+		cost = 0.00
+		prerequisite = {
+			focus = ENG_royal_air_force
+		}
+		x = 72
+		y = 1
+
+	}
+}

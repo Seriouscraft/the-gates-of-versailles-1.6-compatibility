@@ -1,0 +1,163 @@
+﻿###################################
+#News Events - Gates of Versailles#
+###################################
+
+add_namespace = news
+
+news_event = { #October Events in France
+	id = news.334
+	title = news.334.t
+	desc = news.334.desc
+	picture = GFX_news_event_france_october_events
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.333.a
+		trigger = {
+			TAG = FRA
+		}
+	}
+	option = {
+		name = news.333.b
+		trigger = {
+			is_in_faction_with = FRA
+			NOT = { TAG = FRA}
+		}
+	}
+	option = {
+		name = news.333.c
+		trigger = {
+			TAG = ENG
+		}
+	}
+	option = {
+		name = news.333.d
+		trigger = {
+			TAG = GER
+		}
+	}
+	option = {
+		name = news.333.e
+		trigger = {
+			NOT = { TAG = ENG }
+			NOT = { TAG = GER }
+			NOT = { TAG = FRA }
+			NOT = { is_in_faction_with = FRA }
+		}
+	}
+}
+
+news_event = { #Mussolini Assassinated
+	id = news.335
+	title = news.335.t
+	desc = news.335.desc
+	picture = GFX_news_event_generic_funeral
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.335.a
+		trigger = {
+			TAG = ITA
+		}
+	}
+	option = {
+		name = news.335.b
+		trigger = {
+			TAG = FRA
+		}
+	}
+	option = {
+		name = news.335.c
+		trigger = {
+			TAG = AUS
+		}
+	}
+	option = {
+		name = news.335.d
+		trigger = {
+			TAG = ENG
+		}
+	}
+	option = {
+		name = news.335.e
+		trigger = {
+			TAG = GER
+		}
+	}
+	option = {
+		name = news.335.f
+		trigger = {
+			is_in_faction_with = FRA 
+		}
+	}
+	option = {
+		name = news.335.g
+		trigger = {
+			NOT = { TAG = AUS }
+			NOT = { TAG = ITA }
+			NOT = { TAG = GER }
+			NOT = { TAG = FRA }
+			NOT = { TAG = ENG }
+			NOT = { is_in_faction_with = AUS }
+		}
+	}
+}
+
+news_event = { #Victor Emmanuel III Executed
+	id = news.336
+	title = news.336.t
+	desc = news.336.desc
+	picture = GFX_news_event_french_parade
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.336.a
+		trigger = {
+			TAG = ITA
+		}
+	}
+	option = {
+		name = news.336.b
+		trigger = {
+			TAG = FRA
+		}
+	}
+	option = {
+		name = news.336.c
+		trigger = {
+			TAG = AUS
+		}
+	}
+	option = {
+		name = news.336.d
+		trigger = {
+			TAG = ENG
+		}
+	}
+	option = {
+		name = news.336.e
+		trigger = {
+			TAG = GER
+		}
+	}
+	option = {
+		name = news.336.f
+		trigger = {
+			NOT = { TAG = AUS }
+			NOT = { TAG = ITA }
+			NOT = { TAG = GER }
+			NOT = { TAG = FRA }
+			NOT = { TAG = ENG }
+			NOT = { is_in_faction_with = AUS }
+		}
+	}
+}

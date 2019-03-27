@@ -1,0 +1,32 @@
+﻿############################################
+# Siam Events - Gates to Versailles Edition#
+############################################
+
+add_namespace = siam
+
+country_event = { #Help the Indochinese Union for the independance war
+	id = siam.1
+	title = siam.1.t
+	desc = siam.1.d
+	picture = GFX_report_event_siam_indochina_ask_help
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = siam.1.a
+		ai_chance = {
+			factor = 100
+		}
+		add_to_war = { 
+		targeted_alliance = IND
+		enemy = FRA
+		hostility_reason = asked_to_join
+			}
+		}
+	option = {
+		name = siam.1.b
+			ai_chance = {
+			factor = 0
+		}
+	}
+}

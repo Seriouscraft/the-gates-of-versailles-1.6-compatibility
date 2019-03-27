@@ -1,0 +1,431 @@
+﻿##############################################
+# French Events - Gates to Versailles Edition#
+##############################################
+
+add_namespace = france
+
+country_event = { #Indochinese Revolution
+	id = france.35
+	title = france.35.t
+	desc = france.35.d
+	picture = GFX_report_event_france_indochinese_independence
+	
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		days = 35
+	}
+	
+	trigger = {
+		tag = FRA
+		date > 1940.1.1
+		IND = { exists = no }
+	}
+	
+	option = {
+		name = france.35.a
+		IND = {
+			transfer_state = 799
+			load_oob = "IND_FRA_Civil_War_OOB"
+		}
+		FRA = {
+			declare_war_on = {
+			target = IND
+			type = annex_everything
+			}
+		}
+		SIA = {
+		country_event = { days = 1 id = siam.1 }
+		}
+	}
+}
+
+country_event = { #France lost the war of Independence
+	id = france.36
+	title = france.36.t
+	desc = france.36.d
+	picture = GFX_report_event_france_indochinese_revolution_succesful
+	
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		days = 35
+	}
+	
+	trigger = {
+		FRA = {
+			has_war_with = IND
+			}
+		AND = {
+			799 = {
+				OR = {
+				is_controlled_by = IND
+				is_controlled_by = SIA
+				}
+			}
+			286 = {
+				OR = {
+				is_controlled_by = IND
+				is_controlled_by = SIA
+				}
+			}
+			741 = {
+				OR = {
+				is_controlled_by = IND
+				is_controlled_by = SIA
+				}
+			}
+			670 = {
+				OR = {
+				is_controlled_by = IND
+				is_controlled_by = SIA
+				}
+			}
+			671 = {
+				OR = {
+				is_controlled_by = IND
+				is_controlled_by = SIA
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = france.36.a
+		FRA = {
+		add_war_support = -0.1
+		add_stability = -0.05
+		white_peace = IND
+		white_peace = SIA
+			IND = { transfer_state = 799 }
+			IND = { transfer_state = 286 }
+			IND = { transfer_state = 741 }
+			IND = { transfer_state = 670 }
+			IND = { transfer_state = 671 }
+		}
+	}
+}
+
+country_event = { #October Events
+	id = france.37
+	title = france.37.t
+	desc = france.37.d
+	picture = GFX_report_event_france_october_events
+	
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		days = 30
+	}
+	
+	trigger = {
+		tag = FRA
+		date > 1936.10.1
+	}
+	
+	option = {
+		name = france.37.a
+		FRA = {
+		add_stability = -0.1	
+		set_country_flag = fra_october_events	
+		}
+	}
+	
+	option = {
+		name = france.37.b
+		FRA = {
+		add_stability = -0.1
+			add_popularity = {
+				ideology = democratic
+				popularity = -0.02
+			}
+			add_popularity = {
+				ideology = liberals
+				popularity = -0.02
+			}
+		set_country_flag = fra_october_events	
+		}
+	}
+	
+	option = {
+		name = france.37.c
+		add_opinion_modifier = {
+			target = ENG
+			modifier = ENG_FRA_accusation_of_october_events
+		}
+		FRA = {
+		set_country_flag = fra_october_events
+		}
+	}
+}
+
+country_event = { #La solution radicale
+	id = france.38
+	title = france.38.t
+	desc = france.38.d
+	picture = GFX_report_event_france_october_events
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = france.38.a
+			add_popularity = {
+				ideology = democratic
+				popularity = -0.5
+			}
+			add_popularity = {
+				ideology = liberals
+				popularity = -0.5
+			}
+			hidden_effect = {
+				country_event = { days = 3 id = france.39 }
+			}
+			add_stability = -0.03
+			add_manpower = -24054
+			add_war_support = 0.03
+		}
+	}
+
+country_event = { #De Gaulle escape to Switzerland
+	id = france.39
+	title = france.39.t
+	desc = france.39.d
+	picture = GFX_report_event_france_october_events
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = france.39.a
+		
+		SWI = {
+		create_country_leader = {
+			name = "Charles de Gaulle"
+			desc = "POLITICS_CHARLES_DE_GAULLES_BELGIUM_DESC"
+			picture = "Portrait_Belgium_Charles_de_Gaulle.dds"
+			expire = "1965.1.1"
+			ideology = conservatism
+			traits = {
+				}
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.07
+				}
+			add_opinion_modifier = {
+			target = FRA
+			modifier = SWI_deportation_attempt
+				}
+			}
+		FRA = {
+			add_opinion_modifier = {
+			target = SWI
+			modifier = FRA_failure_of_deportation
+				}
+			}
+		}
+	}
+	
+country_event = { #State religion question
+	id = france.40
+	title = france.40.t
+	desc = france.40.d
+#	picture = GFX_report_event_france_october_events
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = france.40.a #Enforce Catholicism
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.1
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = -0.02
+			}
+			add_popularity = {
+				ideology = liberal
+				popularity = -0.02
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.02
+			}
+			add_popularity = {
+				ideology = totalitarian
+				popularity = 0.02
+			}
+			add_popularity = {
+				ideology = radical_socialist
+				popularity = -0.02
+			}
+			add_popularity = {
+				ideology = social_democratic
+				popularity = -0.02
+			}
+			add_stability = -0.03
+		}
+		
+	option = {
+		name = france.40.b #Secular country
+			add_popularity = {
+				ideology = neutrality
+				popularity = -0.1
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = 0.02
+			}
+			add_popularity = {
+				ideology = liberal
+				popularity = 0.02
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = -0.02
+			}
+			add_popularity = {
+				ideology = totalitarian
+				popularity = -0.02
+			}
+			add_popularity = {
+				ideology = radical_socialist
+				popularity = 0.02
+			}
+			add_popularity = {
+				ideology = social_democratic
+				popularity = 0.02
+			}
+			add_stability = 0.03
+		}
+	}
+	
+country_event = { #Debate about Border Control
+	id = france.41
+	title = france.41.t
+	desc = france.41.d
+#	picture = GFX_report_event_france_october_events
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = france.41.a #Strict Border Control
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.1
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = -0.02
+			}
+			add_popularity = {
+				ideology = liberal
+				popularity = -0.02
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.02
+			}
+			add_popularity = {
+				ideology = totalitarian
+				popularity = 0.02
+			}
+			add_popularity = {
+				ideology = radical_socialist
+				popularity = -0.02
+			}
+			add_popularity = {
+				ideology = social_democratic
+				popularity = -0.02
+			}
+			add_stability = -0.03
+		}
+		
+	option = {
+		name = france.41.b #Not-strict Bordel Control
+			add_popularity = {
+				ideology = neutrality
+				popularity = -0.1
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = 0.02
+			}
+			add_popularity = {
+				ideology = liberal
+				popularity = 0.02
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = -0.02
+			}
+			add_popularity = {
+				ideology = totalitarian
+				popularity = -0.02
+			}
+			add_popularity = {
+				ideology = radical_socialist
+				popularity = 0.02
+			}
+			add_popularity = {
+				ideology = social_democratic
+				popularity = 0.02
+			}
+			add_stability = 0.03
+		}
+	}
+	
+country_event = { #The Fate of the Dutch East Indies
+	id = france.42
+	title = france.42.t
+	desc = france.42.d
+#	picture = 
+
+	trigger = {
+	tag = FRA
+	HOL = { is_puppet_of = FRA }
+	NOT = {
+		INS = { exists = no }
+		INS = { has_war = no }
+		INS = { is_puppet_of = FRA }
+		}
+	}
+
+	option = {
+		name = france.42.a #We will take the colony
+		set_country_flag = fra_domination_benelux
+		white_peace = INS
+		FRA = {
+		puppet = INS
+		}
+	}
+	
+	option = {
+		name = france.42.b #Direct rule from Paris! (hehe Kaiserreich memes are best memes...)
+		set_country_flag = fra_domination_benelux
+		white_peace = INS
+		add_named_threat = { threat = 6 name = FRA_Annexed_INS }
+		INS = {
+			FRA = { transfer_state = 672 }
+			FRA = { transfer_state = 335 }
+			FRA = { transfer_state = 667 }
+			FRA = { transfer_state = 334 }
+			FRA = { transfer_state = 673 }
+			FRA = { transfer_state = 668 }
+			FRA = { transfer_state = 669 }
+			FRA = { transfer_state = 738 }
+		}
+	}
+	
+	option = {
+		name = france.42.c #Create an independent nation and let them do whatever they want
+		set_country_flag = fra_domination_benelux
+		white_peace = INS
+		INS = {
+		set_cosmetic_tag = INS_independent_neutrality
+		}
+		FRA = {
+		add_named_threat = { threat = -2 name = FRA_set_free_INS }
+		}
+	}
+}

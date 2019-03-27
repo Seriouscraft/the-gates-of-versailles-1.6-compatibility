@@ -1,0 +1,93 @@
+###############################
+#intro events by Unkn0wn3ntity#
+###############################
+
+add_namespace = intro
+
+country_event = {
+	id = intro.1
+	title = intro.1.t
+	desc = intro.1.d
+	picture = GFX_none
+
+	is_triggered_only = yes
+
+	option = {
+		name = intro.1.a
+		ai_chance = { factor = 100 }
+		country_event = { id = intro.4 }
+	}
+
+	option = {
+		name = intro.1.b
+		ai_chance = { factor = 0 }
+		add_political_power = 5
+		country_event = { id = intro.3 }
+	}
+
+	option = {
+		name = intro.1.c
+		ai_chance = { factor = 0 }
+		add_political_power = 10
+		country_event = { id = intro.2 }
+	}
+}
+
+country_event = {
+	id = intro.2
+	title = intro.2.t
+	desc = intro.2.d
+	picture = GFX_none
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Damnit let me keep the PP!"
+		add_political_power = -10
+		country_event = { id = intro.4 }
+	}
+}
+
+country_event = {
+	id = intro.3
+	title = intro.3.t
+	desc = intro.3.d
+	picture = GFX_none
+
+	is_triggered_only = yes
+
+	option = {
+		name = intro.3.a
+		add_political_power = -5
+		country_event = { id = intro.4 }
+	}
+}
+
+country_event = { #difficulty and stuff
+	id = intro.4
+	title = intro.4.t
+	desc = intro.4.d
+	picture = GFX_none
+
+	is_triggered_only = yes
+
+	option = {
+		name = intro.4.a
+		ai_chance = { factor = 100 }
+		#set_global_flag = 
+		#set_country_flag =
+	}
+
+	option = {
+		name = intro.4.b
+		ai_chance = { factor = 0 }
+		#set_global_flag =
+		#set_country_flag =
+	}
+
+	option = {
+		name = intro.4.c
+		ai_chance = { factor = 0 }
+		#
+	}
+}

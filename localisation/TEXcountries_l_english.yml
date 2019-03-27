@@ -1,0 +1,13 @@
+﻿l_english:
+ TEX_fascism:0 "CSA"
+ TEX_fascism_DEF:0 "The CSA"
+ TEX_democratic:0 "Republic of Texas"
+ TEX_democratic_DEF:0 "The Republic of Texas"
+ TEX_neutrality:0 "Texas"
+ TEX_neutrality_DEF:0 "Texas"
+ TEX_communism:0 "Texan Commune"
+ TEX_communism_DEF:0 "The Texan Commune"
+ TEX_fascism_ADJ:0 "Texan"
+ TEX_democratic_ADJ:0 "Texan"
+ TEX_neutrality_ADJ:0 "Texan"
+ TEX_communism_ADJ:0 "Texan

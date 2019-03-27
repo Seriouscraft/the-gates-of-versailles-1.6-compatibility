@@ -1,0 +1,99 @@
+division_template = {
+	name = "Dông Duong Phien Quan"
+	division_names_group = YUN_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Quan đoi nhan dan Dong Duong"
+	division_names_group = YUN_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+	}
+}
+units = {
+	division = {	
+		name = "Quan Noi Dậy 1"
+		location = 4223
+		division_template = "Dông Duong Phien Quan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.6
+
+	}
+	division = {	
+		name = "Quan Noi Day Lan Thu 2"
+		location = 1423
+		division_template = "Dông Duong Phien Quan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.6
+
+	}
+	division = {	
+		name = "Quan Noi Day Thu 3"
+		location = 1396
+		division_template = "Dông Duong Phien Quan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.6
+
+	}
+	division = {	
+		name = "Quan Noi Day Thu 4"
+		location = 7303
+		division_template = "Dông Duong Phien Quan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.6
+
+	}
+	division = {	
+		name = "Quan Noi Day Thu 5"
+		location = 4341
+		division_template = "Dông Duong Phien Quan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.6
+
+	}
+	division = {	
+		name = "Quan Noi Day Thu 6"
+		location = 4223
+		division_template = "Dông Duong Phien Quan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.6
+
+	}
+	division = {	
+		name = "Quan Noi Day Thu 7"
+		location = 1423
+		division_template = "Dông Duong Phien Quan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.6
+
+	}
+	division = {	
+		name = "Quan Noi Day Thu 8"
+		location = 1396
+		division_template = "Dông Duong Phien Quan"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.6
+
+	}
+	division = {	
+		name = "Su Doan 1 cua quan đoi nhan dan"
+		location = 12133
+		division_template = "Quan đoi nhan dan Dong Duong"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.8
+
+	}
+}
+
+

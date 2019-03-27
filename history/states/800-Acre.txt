@@ -1,0 +1,19 @@
+state={
+	id=800
+	name="STATE_800"
+	history={
+		owner = POR
+		buildings = {
+			infrastructure = 0
+
+		}
+		add_core_of = POR
+
+	}
+	provinces={
+		13223 
+	}
+	manpower=112100
+	state_category=wasteland
+	buildings_max_level_factor=1.000
+}

@@ -1,0 +1,57 @@
+spriteTypes = {
+
+		###### Focus icons for Austria
+
+	SpriteType = {
+	name = "GFX_generic_aid"
+	texturefile = "gfx/interface/goals/generic_aid.dds"			
+	}
+	SpriteType = {
+	name = "GFX_generic_attack_denmark"
+	texturefile = "gfx/interface/goals/generic_attack_denmark.dds"			
+	}
+	SpriteType = {
+	name = "GFX_generic_conservative"
+	texturefile = "gfx/interface/goals/generic_conservative.dds"			
+	}
+	SpriteType = {
+	name = "GFX_generic_constitution"
+	texturefile = "gfx/interface/goals/generic_constitution.dds"			
+	}
+	SpriteType = {
+	name = "GFX_generic_deal_with_french"
+	texturefile = "gfx/interface/goals/generic_deal_with_french.dds"			
+	}
+	SpriteType = {
+	name = "GFX_generic_economic_equality"
+	texturefile = "gfx/interface/goals/generic_economic_equality.dds"			
+	}
+	SpriteType = {
+	name = "GFX_generic_german_dream"
+	texturefile = "gfx/interface/goals/generic_german_dream.dds"			
+	}
+	SpriteType = {
+	name = "GFX_generic_hold_elections"
+	texturefile = "gfx/interface/goals/generic_hold_elections.dds"			
+	}
+	SpriteType = {
+	name = "GFX_generic_immigration"
+	texturefile = "gfx/interface/goals/generic_immigration.dds"			
+	}
+	SpriteType = {
+	name = "GFX_generic_liberal"
+	texturefile = "gfx/interface/goals/generic_liberal.dds"			
+	}
+	SpriteType = {
+	name = "GFX_generic_skewer_communism"
+	texturefile = "gfx/interface/goals/generic_skewer_communism.dds"			
+	}
+	SpriteType = {
+	name = "GFX_generic_social_democratic"
+	texturefile = "gfx/interface/goals/generic_social_democratic.dds"			
+	}
+	SpriteType = {
+	name = "GFX_generic_social_progress"
+	texturefile = "gfx/interface/goals/generic_social_progress.dds"			
+	}	
+}

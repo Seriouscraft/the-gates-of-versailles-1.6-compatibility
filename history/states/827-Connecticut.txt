@@ -1,0 +1,28 @@
+state={
+	id=827
+	name="STATE_827"
+	history={
+		owner = USA
+		buildings = {
+			infrastructure = 6
+			arms_factory = 1
+			industrial_complex = 1
+			dockyard = 2
+			9832 = {
+				naval_base = 3
+
+				}
+			}
+		add_core_of = USA
+		victory_points = {
+			9832 1 
+		}
+
+	}
+	provinces={
+		6909 9832 9847 9850 13243
+	}
+	manpower=1709242
+	buildings_max_level_factor=1.000
+	state_category=city
+}

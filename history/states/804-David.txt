@@ -1,0 +1,19 @@
+state={
+	id=804
+	name="STATE_804"
+	history={
+		owner = PAN
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = PAN
+
+	}
+	provinces={
+		1633 4611 4624 
+	}
+	manpower=120720
+	state_category=pastoral
+	buildings_max_level_factor=1.000
+}

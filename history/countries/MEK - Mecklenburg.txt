@@ -1,0 +1,59 @@
+﻿capital = 59
+
+OOB = "MEK_1936"
+
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1
+	tech_recon = 1
+}
+
+set_politics = {
+
+	parties = {
+		democratic = { 
+			popularity = 55
+		}
+
+		fascism = {
+			popularity = 5
+		}
+		
+		communism = {
+			popularity = 10
+		}
+		
+		neutrality = {
+			popularity = 5
+		}
+		
+		social_democratic = {
+			popularity = 10
+		}
+		
+		liberal = {
+			popularity = 15
+		}
+		
+		totalitarian = {
+			popularity = 0
+		}
+	}
+	
+	ruling_party = democratic
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_convoys = 0
+
+create_country_leader = {
+	name = "Heinrich Lübke"
+	desc = "POLITICS_HEINRICH_LUBKE_DESC"
+	picture = "Portrait_Mecklenburg_Heinrich_Lubke.dds"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+	}
+}

@@ -1,0 +1,46 @@
+#########################################################################
+# THE GATES OF VERSAILLES - OPINION MODIFIERS
+##########################################################################
+# value
+# min_trust
+# max_trust
+# decay
+# months/years/days = timer
+# trade = yes/no
+
+#France
+opinion_modifiers = {
+	ENG_FRA_accusation_of_october_events = { value = -50 }
+}
+
+opinion_modifiers = {
+	FRA_agressive_diplomacy = { value = -25 }
+}
+
+opinion_modifiers = {
+	FRA_passive_diplomacy = { value = 25 }
+}
+
+opinion_modifiers = {
+	FRA_failure_of_deportation = { value = -100 }
+}
+
+#Flanders
+opinion_modifiers = {
+	BEL_deportation_attempt = { value = -100 }
+}
+
+#Austria
+opinion_modifiers = {
+	vienna_meeting = { value = 30 }                                                
+}
+
+#Italy
+opinion_modifiers = {
+	anti_colonialism_campaign = { value = -45 }                                                
+}
+
+#Ethiopia
+opinion_modifiers = {
+	anti_colonialist = { value = -50 }
+}

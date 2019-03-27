@@ -1,0 +1,19 @@
+state={
+	id=835
+	name="STATE_835"
+	history={
+		owner = USA
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = USA
+
+	}
+	provinces={
+		3834 5044 7920 10783 
+	}
+	manpower=107100
+	state_category=pastoral
+	buildings_max_level_factor=1.000
+}

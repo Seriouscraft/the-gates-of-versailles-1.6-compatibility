@@ -1,0 +1,23 @@
+state={
+	id=825
+	name="STATE_825"
+	
+	history={
+		owner = USA
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+			air_base = 2
+
+		}
+		add_core_of = USA
+
+	}
+	
+	provinces={
+		801 3941 3975 4627 6850 6958 6971 7466 7588 7646 9923 10441 11888 
+	}
+	manpower=1961974
+	state_category=large_town
+	buildings_max_level_factor=1.000
+}
