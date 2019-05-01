@@ -37,7 +37,7 @@ NAP = {
 	color = rgb { 118 72 145 }
 	color_ui = rgb { 118 72 145 }
 }
-WES = {
+WST = {
 	color = rgb { 215 183 53 }
 	color_ui = rgb { 215 183 53 }
 }

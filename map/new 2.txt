@@ -1,0 +1,98 @@
+[15:16:27][map.cpp:1209]: prov 1280 has no continent DONE
+[15:16:27][map.cpp:1209]: prov 1751 has no continent DONE
+[15:16:27][map.cpp:1209]: prov 2165 has no continent DONE
+[15:16:27][map.cpp:1209]: prov 2489 has no continent DONE
+[15:16:27][map.cpp:1209]: prov 3995 has no continent DONE
+[15:16:27][map.cpp:1209]: prov 4180 has no continent DONE
+[15:16:27][map.cpp:1209]: prov 4286 has no continent DONE
+[15:16:27][map.cpp:1209]: prov 4357 has no continent DONE
+[15:16:27][map.cpp:1209]: prov 4387 has no continent DONE
+[15:16:27][map.cpp:1209]: prov 4579 has no continent
+[15:16:27][map.cpp:1209]: prov 5023 has no continent
+[15:16:27][map.cpp:1209]: prov 7112 has no continent
+[15:16:27][map.cpp:1209]: prov 7195 has no continent
+[15:16:27][map.cpp:1209]: prov 7290 has no continent
+[15:16:27][map.cpp:1209]: prov 7302 has no continent
+[15:16:27][map.cpp:1209]: prov 7393 has no continent
+[15:16:27][map.cpp:1209]: prov 10048 has no continent
+[15:16:27][map.cpp:1209]: prov 10188 has no continent
+[15:16:27][map.cpp:1209]: prov 10995 has no continent
+[15:16:27][map.cpp:1209]: prov 12021 has no continent
+[15:16:27][map.cpp:1209]: prov 12103 has no continent
+[15:16:27][map.cpp:1209]: prov 12140 has no continent
+[15:16:27][map.cpp:1209]: prov 12148 has no continent
+[15:16:27][map.cpp:1209]: prov 12159 has no continent
+[15:16:27][map.cpp:1209]: prov 13002 has no continent
+[15:16:27][map.cpp:1209]: prov 13005 has no continent
+[15:16:27][map.cpp:1209]: prov 13019 has no continent
+[15:16:27][map.cpp:1209]: prov 13020 has no continent
+[15:16:27][map.cpp:1209]: prov 13021 has no continent
+[15:16:27][map.cpp:1209]: prov 13022 has no continent
+[15:16:27][map.cpp:1209]: prov 13023 has no continent
+[15:16:27][map.cpp:1209]: prov 13024 has no continent
+[15:16:27][map.cpp:1209]: prov 13025 has no continent
+[15:16:27][map.cpp:1209]: prov 13026 has no continent
+[15:16:27][map.cpp:1209]: prov 13027 has no continent
+[15:16:27][map.cpp:1209]: prov 13028 has no continent
+[15:16:27][map.cpp:1209]: prov 13029 has no continent
+[15:16:27][map.cpp:1209]: prov 13030 has no continent
+[15:16:27][map.cpp:1209]: prov 13031 has no continent
+[15:16:27][map.cpp:1209]: prov 13032 has no continent
+[15:16:27][map.cpp:1209]: prov 13033 has no continent
+[15:16:27][map.cpp:1209]: prov 13034 has no continent
+[15:16:27][map.cpp:1209]: prov 13035 has no continent
+[15:16:27][map.cpp:1209]: prov 13036 has no continent
+[15:16:27][map.cpp:1209]: prov 13038 has no continent
+[15:16:27][map.cpp:1209]: prov 13039 has no continent
+[15:16:27][map.cpp:1209]: prov 13040 has no continent
+[15:16:27][map.cpp:1209]: prov 13041 has no continent
+[15:16:27][map.cpp:1209]: prov 13042 has no continent
+[15:16:27][map.cpp:1209]: prov 13043 has no continent
+[15:16:27][map.cpp:1209]: prov 13044 has no continent
+[15:16:27][map.cpp:1209]: prov 13045 has no continent
+[15:16:27][map.cpp:1209]: prov 13046 has no continent
+[15:16:27][map.cpp:1209]: prov 13047 has no continent
+[15:16:27][map.cpp:1209]: prov 13048 has no continent
+[15:16:27][map.cpp:1209]: prov 13049 has no continent
+[15:16:27][map.cpp:1209]: prov 13050 has no continent
+[15:16:27][map.cpp:1209]: prov 13051 has no continent
+[15:16:27][map.cpp:1209]: prov 13052 has no continent
+[15:16:27][map.cpp:1209]: prov 13053 has no continent
+[15:16:27][map.cpp:1209]: prov 13054 has no continent
+[15:16:27][map.cpp:1209]: prov 13055 has no continent
+[15:16:27][map.cpp:1209]: prov 13056 has no continent
+[15:16:27][map.cpp:1209]: prov 13057 has no continent
+[15:16:27][map.cpp:1209]: prov 13080 has no continent
+
+
+
+
+[15:16:27][map.cpp:1209]: prov 13218 has no continent
+[15:16:27][map.cpp:1209]: prov 13219 has no continent
+[15:16:27][map.cpp:1209]: prov 13220 has no continent
+[15:16:27][map.cpp:1209]: prov 13221 has no continent
+[15:16:27][map.cpp:1209]: prov 13222 has no continent
+[15:16:27][map.cpp:1209]: prov 13223 has no continent
+[15:16:27][map.cpp:1209]: prov 13224 has no continent
+[15:16:27][map.cpp:1209]: prov 13225 has no continent
+[15:16:27][map.cpp:1209]: prov 13226 has no continent
+[15:16:27][map.cpp:1209]: prov 13227 has no continent
+[15:16:27][map.cpp:1209]: prov 13228 has no continent
+[15:16:27][map.cpp:1209]: prov 13229 has no continent
+[15:16:27][map.cpp:1209]: prov 13230 has no continent
+[15:16:27][map.cpp:1209]: prov 13231 has no continent
+[15:16:27][map.cpp:1209]: prov 13232 has no continent
+[15:16:27][map.cpp:1209]: prov 13233 has no continent
+[15:16:27][map.cpp:1209]: prov 13234 has no continent
+[15:16:27][map.cpp:1209]: prov 13235 has no continent
+[15:16:27][map.cpp:1209]: prov 13236 has no continent
+[15:16:27][map.cpp:1209]: prov 13237 has no continent
+[15:16:27][map.cpp:1209]: prov 13238 has no continent
+[15:16:27][map.cpp:1209]: prov 13239 has no continent
+[15:16:27][map.cpp:1209]: prov 13240 has no continent
+[15:16:27][map.cpp:1209]: prov 13241 has no continent
+[15:16:27][map.cpp:1209]: prov 13242 has no continent
+[15:16:27][map.cpp:1209]: prov 13243 has no continent
+[15:16:27][map.cpp:1209]: prov 13244 has no continent
+[15:16:27][map.cpp:1209]: prov 13245 has no continent
+[15:16:27][map.cpp:1209]: prov 13246 has no continent

@@ -1,0 +1,76 @@
+################################################
+# Spannish Events - Gates to Versailles Edition#
+################################################
+
+add_namespace = spain
+
+country_event = { #France want to buy Catalonia
+	id = spain.11
+	title = spain.11.t
+	desc = spain.11.d
+#	picture = GFX_report_event_france_indochinese_independence
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = spain.11.a #We accept
+		SPR = {
+		FRA = { transfer_state = 165 }
+		add_war_support = -0.03
+		add_stability = -0.05
+		}
+	}
+	option = {
+		name = spain.11.b #We refuse
+		SPR = {
+		add_war_support = 0.05
+		add_stability = 0.07
+		}
+		FRA = {
+			country_event = { days = 1 id = france.43 }
+		}
+	}
+}
+
+country_event = { #France decide to let us Catalonia
+	id = spain.12
+	title = spain.12.t
+	desc = spain.12.d
+#	picture = GFX_report_event_france_indochinese_independence
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = spain.12.a #Great News!
+	}
+}
+
+country_event = { #France declare war on us for not giving Catalonia
+	id = spain.13
+	title = spain.13.t
+	desc = spain.13.d
+#	picture = GFX_report_event_france_indochinese_independence
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = spain.13.a #Ah God dammit
+	}
+}
+
+country_event = { #Send a peace agreement?
+	id = spain.14
+	title = spain.14.t
+	desc = spain.14.d
+#	picture = GFX_report_event_france_indochinese_independence
+	
+	trigger = {
+		FRA = {
+		has_full_control_of_state = 39
+		}
+	}
+	
+	option = {
+		name = spain.13.a #Yes
+	}
+}

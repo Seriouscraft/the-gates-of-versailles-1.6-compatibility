@@ -9,7 +9,7 @@ state={
 		}
 	}
 	provinces={
-		923 13214
+		923 13232
 	}
 	manpower=61000
 	state_Category = pastoral

@@ -46,7 +46,7 @@ set_technology = {
 create_faction = cont_alliance
 add_to_faction = FRA
 add_to_faction = BAD
-add_to_faction = WES
+add_to_faction = WST
 add_to_faction = SWI
 add_to_faction = NAP
 
