@@ -54,23 +54,24 @@ country_event = { #France declare war on us for not giving Catalonia
 	is_triggered_only = yes
 	
 	option = {
-		name = spain.13.a #Ah God dammit
+		name = spain.13.a #Finally!
 	}
 }
 
-country_event = { #Send a peace agreement?
+country_event = { #France sends us a peace agreement
 	id = spain.14
 	title = spain.14.t
 	desc = spain.14.d
 #	picture = GFX_report_event_france_indochinese_independence
 	
-	trigger = {
-		FRA = {
-		has_full_control_of_state = 39
-		}
-	}
+	is_triggered_only = yes
+	fire_only_once = yes
 	
 	option = {
-		name = spain.13.a #Yes
+		name = spain.14.a #Fianlly...
+		FRA = {
+		white_peace = SPR
+		FRA = { transfer_state = 165 }
+		}
 	}
 }

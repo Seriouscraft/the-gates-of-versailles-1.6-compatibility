@@ -1,4 +1,4 @@
-﻿capital = 787 # Nanjing
+﻿capital = 871 # Nanjing
 
 oob = "CHI_1936"
 set_stability = 0.2

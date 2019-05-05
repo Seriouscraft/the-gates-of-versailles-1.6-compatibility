@@ -1,4 +1,4 @@
-﻿capital = 763
+﻿capital = 55
 
 OOB = "WES_1936"
 
